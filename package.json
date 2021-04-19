@@ -1,0 +1,49 @@
+{
+  "name": "wdio-wait-for",
+  "version": "1.0.0",
+  "description": "a library of conditions that are useful for end-to-end tests",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "version": "npm run format:write && git add -A src",
+    "postversion": "git push && git push --tags",
+    "build": "tsc",
+    "doc": "typedoc --exclude '**/*+(index|.spec|.e2e).ts' src/**/*.ts",
+    "lint": "tslint -p tsconfig.json",
+    "format:check": "prettier --check 'src/**/*.ts'",
+    "format:write": "prettier --write 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elaichenkov/expected-condition-playwright.git"
+  },
+  "keywords": [
+    "wdio",
+    "webdriverio",
+    "webdriver.io",
+    "selenium",
+    "waitUntil",
+    "expectedConditions",
+    "wait",
+    "for",
+    "expected",
+    "conditions"
+  ],
+  "author": "Yevhen Laichenkov <elaichenkov@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/elaichenkov/wdio-wait-for",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.20.35",
+    "typedoc-plugin-markdown": "^3.7.1",
+    "typescript": "^4.2.4",
+    "webdriverio": "^7.4.6"
+  }
+}
