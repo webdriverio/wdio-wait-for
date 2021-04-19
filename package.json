@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elaichenkov/expected-condition-playwright.git"
+    "url": "git+https://github.com/elaichenkov/wdio-wait-for.git"
   },
   "keywords": [
     "wdio",
