@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "lib/**/*"
+    "lib/**"
   ],
   "scripts": {
     "prepare": "npm run build",
@@ -32,7 +32,9 @@
     "wait",
     "for",
     "expected",
-    "conditions"
+    "conditions",
+    "e2e",
+    "testing"
   ],
   "author": "Yevhen Laichenkov <elaichenkov@gmail.com>",
   "license": "MIT",
