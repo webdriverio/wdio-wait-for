@@ -6,7 +6,7 @@
 
 ## License
 
-expected-condition-playwright is [MIT licensed](./LICENSE).
+wdio-wait-for is [MIT licensed](./LICENSE).
 
 
 ## Author
