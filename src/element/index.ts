@@ -6,3 +6,5 @@ export * from './numberOfElementsToBe';
 export * from './numberOfElementsToBeLessThan';
 export * from './numberOfElementsToBeMoreThan​';
 export * from './sizeOfElementToBe';
+export * from './elementContainsText';
+export * from './elementContainsValue';
