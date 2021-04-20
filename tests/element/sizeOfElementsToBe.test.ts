@@ -9,12 +9,14 @@ describe('sizeOfElementsToBe', () => {
 
   it('should verify that method returns true when size of element to be', async () => {
     await browser.execute('document.querySelector("button").style.height = "300px"');
+    await browser.waitUntil(sizeOfElementsToBe(selector, { width: defaultWidth, height: 300 }));
 
     expect(await sizeOfElementsToBe(selector, { width: defaultWidth, height: 300 })()).toBe(true);
   });
 
   it('should verify that method returns true when size of element to be', async () => {
     await browser.execute('document.querySelector("button").style.width = "200px"');
+    await browser.waitUntil(sizeOfElementsToBe(selector, { width: 200, height: defaultHeight }));
 
     expect(await sizeOfElementsToBe(selector, { width: 200, height: defaultHeight })()).toBe(true);
   });
