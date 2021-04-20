@@ -23,11 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
+      - name: Update Google Chrome to latest
+        run: |
+              sudo apt update
+              sudo apt --only-upgrade install google-chrome-stable
+              google-chrome --version
       - name: Install dependencies
         run: npm i
 
-      # Runs a set of commands using the runners shell
       - name: Run tests
         run: npm test
