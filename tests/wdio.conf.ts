@@ -35,8 +35,6 @@ export const config: WebdriverIO.Config = {
   reporters: ['spec'],
 
   jasmineOpts: {
-    // Jasmine default timeout
-    defaultTimeoutInterval: 60000,
-    expectationResultHandler: function (passed, assertion) {},
+    defaultTimeoutInterval: 60000
   },
 };
