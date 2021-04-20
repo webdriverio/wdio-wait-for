@@ -30,4 +30,4 @@ browser.waitUntil(urlContains('/v1'));
 A condition that returns a promise
     representing whether browser's url contains.
 
-Defined in: browser/urlContains.ts:12
+Defined in: [browser/urlContains.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/d3bdd9f/src/browser/urlContains.ts#L12)

@@ -8,12 +8,17 @@
 
 - [elementToBeClickable](element.md#elementtobeclickable)
 - [elementToBeEnabled](element.md#elementtobeenabled)
-- [elementToBeInvisible](element.md#elementtobeinvisible)
-- [elementToBeVisible](element.md#elementtobevisible)
+- [elementToBeSelected](element.md#elementtobeselected)
+- [invisibilityOf](element.md#invisibilityof)
 - [numberOfElementsToBe](element.md#numberofelementstobe)
 - [numberOfElementsToBeLessThan](element.md#numberofelementstobelessthan)
 - [numberOfElementsToBeMoreThan](element.md#numberofelementstobemorethan)
+- [presenceOf](element.md#presenceof)
 - [sizeOfElementsToBe](element.md#sizeofelementstobe)
+- [stalenessOf](element.md#stalenessof)
+- [textToBePresentInElement](element.md#texttobepresentinelement)
+- [textToBePresentInElementValue](element.md#texttobepresentinelementvalue)
+- [visibilityOf](element.md#visibilityof)
 
 ## References
 
@@ -29,15 +34,15 @@ Re-exports: [elementToBeEnabled](element_elementtobeenabled.md#elementtobeenable
 
 ___
 
-### elementToBeInvisible
+### elementToBeSelected
 
-Re-exports: [elementToBeInvisible](element_elementtobeinvisible.md#elementtobeinvisible)
+Re-exports: [elementToBeSelected](element_elementtobeselected.md#elementtobeselected)
 
 ___
 
-### elementToBeVisible
+### invisibilityOf
 
-Re-exports: [elementToBeVisible](element_elementtobevisible.md#elementtobevisible)
+Re-exports: [invisibilityOf](element_invisibilityof.md#invisibilityof)
 
 ___
 
@@ -59,6 +64,36 @@ Re-exports: [numberOfElementsToBeMoreThan](element_numberofelementstobemorethan_
 
 ___
 
+### presenceOf
+
+Re-exports: [presenceOf](element_presenceof.md#presenceof)
+
+___
+
 ### sizeOfElementsToBe
 
 Re-exports: [sizeOfElementsToBe](element_sizeofelementtobe.md#sizeofelementstobe)
+
+___
+
+### stalenessOf
+
+Re-exports: [stalenessOf](element_stalenessof.md#stalenessof)
+
+___
+
+### textToBePresentInElement
+
+Re-exports: [textToBePresentInElement](element_texttobepresentinelement.md#texttobepresentinelement)
+
+___
+
+### textToBePresentInElementValue
+
+Re-exports: [textToBePresentInElementValue](element_texttobepresentinelementvalue.md#texttobepresentinelementvalue)
+
+___
+
+### visibilityOf
+
+Re-exports: [visibilityOf](element_visibilityof.md#visibilityof)

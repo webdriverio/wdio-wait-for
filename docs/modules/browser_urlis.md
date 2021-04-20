@@ -30,4 +30,4 @@ browser.waitUntil(urlIs('https://the-internet.herokuapp.com/'));
 A condition that returns a promise
     representing whether browser's url is.
 
-Defined in: browser/urlIs.ts:12
+Defined in: [browser/urlIs.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/d3bdd9f/src/browser/urlIs.ts#L12)
