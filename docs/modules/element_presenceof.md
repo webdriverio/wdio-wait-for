@@ -30,4 +30,4 @@ browser.waitUntil(presenceOf('.header'));
 An expected condition that returns a promise
     representing whether the element is present on the DOM.
 
-Defined in: element/presenceOf.ts:13
+Defined in: [element/presenceOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/presenceOf.ts#L13)

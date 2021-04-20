@@ -30,4 +30,4 @@ browser.waitUntil(titleIs('Dashboard - Main page'));
 A condition that returns a promise
     representing whether browser's title is.
 
-Defined in: [browser/titleIs.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/d3bdd9f/src/browser/titleIs.ts#L12)
+Defined in: [browser/titleIs.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/browser/titleIs.ts#L12)

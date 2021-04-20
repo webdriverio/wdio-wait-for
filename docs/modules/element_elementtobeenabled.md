@@ -30,4 +30,4 @@ browser.waitUntil(elementToBeEnabled('.btn'));
 An expected condition that returns a promise
     representing whether the element is enabled.
 
-Defined in: [element/elementToBeEnabled.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/d3bdd9f/src/element/elementToBeEnabled.ts#L13)
+Defined in: [element/elementToBeEnabled.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/elementToBeEnabled.ts#L13)

@@ -30,4 +30,4 @@ browser.waitUntil(visibilityOf('.header'));
 An expected condition that returns a promise
     representing whether the element is visible.
 
-Defined in: element/visibilityOf.ts:13
+Defined in: [element/visibilityOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/visibilityOf.ts#L13)

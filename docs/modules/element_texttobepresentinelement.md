@@ -31,4 +31,4 @@ browser.waitUntil(textToBePresentInElement('.home', 'Home'));
 A condition that returns a promise
     representing whether the element contains a specific text.
 
-Defined in: element/textToBePresentInElement.ts:14
+Defined in: [element/textToBePresentInElement.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/textToBePresentInElement.ts#L14)

@@ -33,4 +33,4 @@ browser.waitUntil(sizeOfElementsToBe('button', { width: 200, height: 200 }));
 An expected condition that returns a promise
     representing whether the element size.
 
-Defined in: [element/sizeOfElementToBe.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/d3bdd9f/src/element/sizeOfElementToBe.ts#L14)
+Defined in: [element/sizeOfElementToBe.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/sizeOfElementToBe.ts#L14)

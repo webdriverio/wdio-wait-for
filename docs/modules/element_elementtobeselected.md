@@ -30,4 +30,4 @@ browser.waitUntil(elementToBeSelected('.btn'));
 An expected condition that returns a promise
     representing whether the element is selected.
 
-Defined in: element/elementToBeSelected.ts:13
+Defined in: [element/elementToBeSelected.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/elementToBeSelected.ts#L13)

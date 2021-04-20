@@ -30,4 +30,4 @@ browser.waitUntil(elementToBeClickable('.links'));
 An expected condition that returns a promise
     representing whether the element is clickable.
 
-Defined in: [element/elementToBeClickable.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/d3bdd9f/src/element/elementToBeClickable.ts#L13)
+Defined in: [element/elementToBeClickable.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/elementToBeClickable.ts#L13)

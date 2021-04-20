@@ -29,4 +29,4 @@ browser.waitUntil(not(alertIsPresent()));
 
 An expected condition that returns that returns the negated value.
 
-Defined in: logical/not.ts:12
+Defined in: [logical/not.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/logical/not.ts#L12)
