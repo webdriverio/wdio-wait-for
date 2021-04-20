@@ -11,7 +11,13 @@ export const config: WebdriverIO.Config = {
       browserName: 'chrome',
       acceptInsecureCerts: true,
       'goog:chromeOptions': {
-        args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage', '--enable-precise-memory-info'],
+        args: [
+          '--headless',
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--enable-precise-memory-info',
+          '--window-size=1280,900',
+        ],
       },
     },
   ],
@@ -35,6 +41,6 @@ export const config: WebdriverIO.Config = {
   reporters: ['spec'],
 
   jasmineOpts: {
-    defaultTimeoutInterval: 60000
+    defaultTimeoutInterval: 60000,
   },
 };

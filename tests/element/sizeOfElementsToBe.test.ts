@@ -22,7 +22,6 @@ describe('sizeOfElementsToBe', () => {
     await browser.pause(5000);
     console.log('<<<<<<< SIZE: ', await (await $('button')).getSize());
 
-
     expect(await sizeOfElementsToBe(selector, { width: 200, height: defaultHeight })()).toBe(true);
   });
 
