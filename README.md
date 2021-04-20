@@ -1,6 +1,13 @@
 # WDIO-WAIT-FOR
 
 > wdio-wait-for is a Node.js library for [WebdriverIO](http://webdriver.io/) that supplies a set of common conditions that provides functionalities to wait for certain conditions till a defined task is complete.
+
+## Installation
+To use wdio-wait-for in your project, run:
+
+```shell
+npm i -D wdio-wait-for
+```
 ## [API](./docs/modules.md)
 
 - [alertIsPresent](docs/modules/browser_alertispresent.md)
