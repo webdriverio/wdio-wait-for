@@ -19,6 +19,6 @@ describe('visibilityOf', () => {
     const deleteButton = await $(selector);
     await deleteButton.click();
 
-    expect(await visibilityOf(selector)()).toBe(false);
+    expect(await visibilityOf($(selector))()).toBe(false);
   });
 });

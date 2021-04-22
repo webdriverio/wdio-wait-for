@@ -12,7 +12,7 @@
 
 ### textToBePresentInElement
 
-▸ **textToBePresentInElement**(`selector`: *string*, `expectedText`: *string*): *function*
+▸ **textToBePresentInElement**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>, `expectedText`: *string*): *function*
 
 A condition for checking an element contains a specific text
 
@@ -23,7 +23,7 @@ browser.waitUntil(textToBePresentInElement('.home', 'Home'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 | `expectedText` | *string* | The expected text to verify |
 
 **Returns:** () => *Promise*<boolean\>
@@ -31,4 +31,4 @@ browser.waitUntil(textToBePresentInElement('.home', 'Home'));
 A condition that returns a promise
     representing whether the element contains a specific text.
 
-Defined in: [element/textToBePresentInElement.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/textToBePresentInElement.ts#L14)
+Defined in: [element/textToBePresentInElement.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/textToBePresentInElement.ts#L14)

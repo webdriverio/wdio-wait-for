@@ -8,7 +8,7 @@ describe('stalenessOf', () => {
   it('should verify that method returns true when element is not present on the DOM', async () => {
     await browser.execute('document.querySelector("#elements").remove()');
 
-    expect(await stalenessOf(selector)()).toBe(true);
+    expect(await stalenessOf($(selector))()).toBe(true);
   });
 
   it('should verify that method returns false when element is present on the DOM', async () => {

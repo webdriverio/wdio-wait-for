@@ -4,15 +4,15 @@
  * @example
  * browser.waitUntil(elementToBeSelected('.btn'));
  *
- * @param {!string} selector The selector to check
+ * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element is selected.
  */
 
-export function elementToBeSelected(selector: string): () => Promise<boolean> {
+export function elementToBeSelected(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
   return async (): Promise<boolean> => {
-    const element = await $(selector);
+    const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
 
     return await element.isSelected();
   };

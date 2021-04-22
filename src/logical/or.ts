@@ -15,4 +15,4 @@ import { logicalChain } from './logicalChain';
 
 export function or(...args: (() => Promise<boolean>)[]): () => Promise<boolean> {
   return logicalChain(false, args);
-};
+}

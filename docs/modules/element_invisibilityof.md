@@ -12,7 +12,7 @@
 
 ### invisibilityOf
 
-▸ **invisibilityOf**(`selector`: *string*): *function*
+▸ **invisibilityOf**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
 
 A condition for checking the element to be invisible
 
@@ -23,11 +23,11 @@ browser.waitUntil(invisibilityOf('.header'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 
 **Returns:** () => *Promise*<boolean\>
 
 An expected condition that returns a promise
     representing whether the element is invisible.
 
-Defined in: [element/invisibilityOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/invisibilityOf.ts#L13)
+Defined in: [element/invisibilityOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/invisibilityOf.ts#L13)

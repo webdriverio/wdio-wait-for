@@ -12,7 +12,7 @@
 
 ### presenceOf
 
-▸ **presenceOf**(`selector`: *string*): *function*
+▸ **presenceOf**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
 
 A condition for checking that an element is present on the DOM of a page
 
@@ -23,11 +23,11 @@ browser.waitUntil(presenceOf('.header'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 
 **Returns:** () => *Promise*<boolean\>
 
 An expected condition that returns a promise
     representing whether the element is present on the DOM.
 
-Defined in: [element/presenceOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/presenceOf.ts#L13)
+Defined in: [element/presenceOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/presenceOf.ts#L13)

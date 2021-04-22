@@ -12,7 +12,7 @@
 
 ### elementToBeSelected
 
-▸ **elementToBeSelected**(`selector`: *string*): *function*
+▸ **elementToBeSelected**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
 
 A condition for checking an element is visible and selected
 
@@ -23,11 +23,11 @@ browser.waitUntil(elementToBeSelected('.btn'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 
 **Returns:** () => *Promise*<boolean\>
 
 An expected condition that returns a promise
     representing whether the element is selected.
 
-Defined in: [element/elementToBeSelected.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/elementToBeSelected.ts#L13)
+Defined in: [element/elementToBeSelected.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/elementToBeSelected.ts#L13)

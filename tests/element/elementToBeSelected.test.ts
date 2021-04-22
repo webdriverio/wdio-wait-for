@@ -13,6 +13,6 @@ describe('elementToBeSelected', () => {
   });
 
   it('should verify that method returns false when element is not selected', async () => {
-    expect(await elementToBeSelected(selector)()).toBe(false);
+    expect(await elementToBeSelected($(selector))()).toBe(false);
   });
 });

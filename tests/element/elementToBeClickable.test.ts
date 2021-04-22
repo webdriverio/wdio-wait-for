@@ -12,6 +12,6 @@ describe('elementToBeClickable', () => {
   it('should verify that method returns false when element is not clickable', async () => {
     await browser.execute('document.querySelector("button").setAttribute("disabled", "");');
 
-    expect(await elementToBeClickable(selector)()).toBe(false);
+    expect(await elementToBeClickable($(selector))()).toBe(false);
   });
 });

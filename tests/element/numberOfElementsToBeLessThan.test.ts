@@ -9,7 +9,7 @@ describe('numberOfElementsToBeLessThan', () => {
     const addElementButton = await $('button');
     await Promise.all([addElementButton.click(), addElementButton.click()]);
 
-    expect(await numberOfElementsToBeLessThan(selector, 3)()).toBe(true);
+    expect(await numberOfElementsToBeLessThan($$(selector), 3)()).toBe(true);
   });
 
   it('should verify that method returns false when number of elements not less than', async () => {

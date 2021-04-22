@@ -12,7 +12,7 @@
 
 ### numberOfElementsToBeMoreThan
 
-▸ **numberOfElementsToBeMoreThan**(`selector`: *string*, `expectedNumber`: *number*): *function*
+▸ **numberOfElementsToBeMoreThan**(`selectorOrElementArray`: *string* \| *Promise*<WebdriverIO.ElementArray\>, `expectedNumber`: *number*): *function*
 
 A condition for checking number of elements with given selector being more than defined number
 
@@ -23,7 +23,7 @@ browser.waitUntil(numberOfElementsToBeMoreThan​('a', 4));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElementArray` | *string* \| *Promise*<WebdriverIO.ElementArray\> | The selector or elements array to check |
 | `expectedNumber` | *number* | The selector to check |
 
 **Returns:** () => *Promise*<boolean\>

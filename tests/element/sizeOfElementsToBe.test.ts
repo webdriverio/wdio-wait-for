@@ -19,7 +19,7 @@ describe('sizeOfElementsToBe', () => {
     defaultHeight = (await (await $('button')).getSize()).height;
 
     await browser.execute('document.querySelector("button").style.width = "200px"');
-    expect(await sizeOfElementsToBe(selector, { width: 200, height: defaultHeight })()).toBe(true);
+    expect(await sizeOfElementsToBe($(selector), { width: 200, height: defaultHeight })()).toBe(true);
   });
 
   it('should verify that method returns false when size of element not to be', async () => {

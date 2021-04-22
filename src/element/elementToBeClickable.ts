@@ -4,15 +4,15 @@
  * @example
  * browser.waitUntil(elementToBeClickable('.links'));
  *
- * @param {!string} selector The selector to check
+ * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element is clickable.
  */
 
-export function elementToBeClickable(selector: string): () => Promise<boolean> {
+export function elementToBeClickable(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
   return async (): Promise<boolean> => {
-    const element = await $(selector);
+    const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
 
     return await element.isClickable();
   };

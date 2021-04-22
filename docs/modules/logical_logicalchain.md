@@ -23,4 +23,4 @@
 
 **Returns:** () => *Promise*<boolean\>
 
-Defined in: [logical/logicalChain.ts:1](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/logical/logicalChain.ts#L1)
+Defined in: [logical/logicalChain.ts:1](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/logical/logicalChain.ts#L1)

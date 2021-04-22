@@ -9,7 +9,7 @@ describe('textToBePresentInElementValue', () => {
     const input = await $(selector);
     await input.setValue('100');
 
-    expect(await textToBePresentInElementValue(selector, '10')()).toBe(true);
+    expect(await textToBePresentInElementValue($(selector), '10')()).toBe(true);
   });
 
   it('should verify that method returns false when element does not contain value', async () => {

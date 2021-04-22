@@ -17,6 +17,6 @@ describe('numberOfElementsToBe', () => {
     const addElementButton = await $('button');
     await addElementButton.click();
 
-    expect(await numberOfElementsToBe(selector, 2)()).toBe(false);
+    expect(await numberOfElementsToBe($$(selector), 2)()).toBe(false);
   });
 });

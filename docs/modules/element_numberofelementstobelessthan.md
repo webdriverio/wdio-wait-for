@@ -12,7 +12,7 @@
 
 ### numberOfElementsToBeLessThan
 
-▸ **numberOfElementsToBeLessThan**(`selector`: *string*, `expectedNumber`: *number*): *function*
+▸ **numberOfElementsToBeLessThan**(`selectorOrElementArray`: *string* \| *Promise*<WebdriverIO.ElementArray\>, `expectedNumber`: *number*): *function*
 
 A condition for checking number of elements with given selector being less than defined number
 
@@ -23,7 +23,7 @@ browser.waitUntil(numberOfElementsToBeLessThan('a', 2));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElementArray` | *string* \| *Promise*<WebdriverIO.ElementArray\> | The selector or elements array to check |
 | `expectedNumber` | *number* | The selector to check |
 
 **Returns:** () => *Promise*<boolean\>
@@ -31,4 +31,4 @@ browser.waitUntil(numberOfElementsToBeLessThan('a', 2));
 An expected condition that returns a promise
     representing whether the element length is less than defined number.
 
-Defined in: [element/numberOfElementsToBeLessThan.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/numberOfElementsToBeLessThan.ts#L14)
+Defined in: [element/numberOfElementsToBeLessThan.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/numberOfElementsToBeLessThan.ts#L14)

@@ -12,7 +12,7 @@
 
 ### textToBePresentInElementValue
 
-▸ **textToBePresentInElementValue**(`selector`: *string*, `expectedValue`: *string*): *function*
+▸ **textToBePresentInElementValue**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>, `expectedValue`: *string*): *function*
 
 A condition for checking an element contains a specific value
 
@@ -23,7 +23,7 @@ browser.waitUntil(textToBePresentInElementValue('input', 'password'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 | `expectedValue` | *string* | The expected value to verify |
 
 **Returns:** () => *Promise*<boolean\>
@@ -31,4 +31,4 @@ browser.waitUntil(textToBePresentInElementValue('input', 'password'));
 A condition that returns a promise
     representing whether the element contains a specific value.
 
-Defined in: [element/textToBePresentInElementValue.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/textToBePresentInElementValue.ts#L14)
+Defined in: [element/textToBePresentInElementValue.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/textToBePresentInElementValue.ts#L14)

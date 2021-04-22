@@ -12,7 +12,7 @@
 
 ### sizeOfElementsToBe
 
-▸ **sizeOfElementsToBe**(`selector`: *string*, `expectedSize`: { `height`: *number* ; `width`: *number*  }): *function*
+▸ **sizeOfElementsToBe**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>, `expectedSize`: { `height`: *number* ; `width`: *number*  }): *function*
 
 A condition for checking size of element with given selector
 
@@ -23,7 +23,7 @@ browser.waitUntil(sizeOfElementsToBe('button', { width: 200, height: 200 }));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 | `expectedSize` | *object* | The selector to check |
 | `expectedSize.height` | *number* | - |
 | `expectedSize.width` | *number* | - |
@@ -33,4 +33,4 @@ browser.waitUntil(sizeOfElementsToBe('button', { width: 200, height: 200 }));
 An expected condition that returns a promise
     representing whether the element size.
 
-Defined in: [element/sizeOfElementToBe.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/sizeOfElementToBe.ts#L14)
+Defined in: [element/sizeOfElementToBe.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/sizeOfElementToBe.ts#L14)

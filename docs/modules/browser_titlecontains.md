@@ -30,4 +30,4 @@ browser.waitUntil(titleContains('Dashboard'));
 A condition that returns a promise
     representing whether browser's title contains.
 
-Defined in: [browser/titleContains.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/browser/titleContains.ts#L12)
+Defined in: [browser/titleContains.ts:12](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/browser/titleContains.ts#L12)

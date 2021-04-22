@@ -12,7 +12,7 @@
 
 ### elementToBeEnabled
 
-▸ **elementToBeEnabled**(`selector`: *string*): *function*
+▸ **elementToBeEnabled**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
 
 A condition for checking an element is visible and enabled such that you can click it
 
@@ -23,11 +23,11 @@ browser.waitUntil(elementToBeEnabled('.btn'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 
 **Returns:** () => *Promise*<boolean\>
 
 An expected condition that returns a promise
     representing whether the element is enabled.
 
-Defined in: [element/elementToBeEnabled.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/elementToBeEnabled.ts#L13)
+Defined in: [element/elementToBeEnabled.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/elementToBeEnabled.ts#L13)

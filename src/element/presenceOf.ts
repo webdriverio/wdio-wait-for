@@ -4,17 +4,16 @@
  * @example
  * browser.waitUntil(presenceOf('.header'));
  *
- * @param {!string} selector The selector to check
+ * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element is present on the DOM.
  */
 
-export function presenceOf(selector: string): () => Promise<boolean> {
+export function presenceOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
   return async (): Promise<boolean> => {
-    const element = await $(selector);
-
     try {
+      const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
       const isVisible = await element.isExisting();
 
       return isVisible;

@@ -4,17 +4,16 @@
  * @example
  * browser.waitUntil(invisibilityOf('.header'));
  *
- * @param {!string} selector The selector to check
+ * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element is invisible.
  */
 
-export function invisibilityOf(selector: string): () => Promise<boolean> {
+export function invisibilityOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
   return async (): Promise<boolean> => {
-    const element = await $(selector);
-
     try {
+      const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
       const isVisible = await element.isDisplayed();
 
       return !isVisible;

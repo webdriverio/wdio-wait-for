@@ -16,6 +16,6 @@ describe('numberOfElementsToBeMoreThan', () => {
     const addElementButton = await $('button');
     await addElementButton.click();
 
-    expect(await numberOfElementsToBeMoreThan(selector, 1)()).toBe(false);
+    expect(await numberOfElementsToBeMoreThan($$(selector), 1)()).toBe(false);
   });
 });

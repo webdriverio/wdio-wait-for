@@ -4,17 +4,21 @@
  * @example
  * browser.waitUntil(numberOfElementsToBe('a', 4));
  *
- * @param {!string} selector The selector to check
+ * @param {!string | WebdriverIO.ElementArray} selectorOrElementArray The selector or elements array to check
  * @param {!number} expectedNumber The selector to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element length.
  */
 
-export function numberOfElementsToBe(selector: string, expectedNumber: number): () => Promise<boolean> {
+export function numberOfElementsToBe(
+  selectorOrElementArray: string | Promise<WebdriverIO.ElementArray>,
+  expectedNumber: number,
+): () => Promise<boolean> {
   return async (): Promise<boolean> => {
-    const element = await $$(selector);
+    const elements =
+      typeof selectorOrElementArray === 'string' ? await $$(selectorOrElementArray) : await selectorOrElementArray;
 
-    return element.length === expectedNumber;
+    return elements.length === expectedNumber;
   };
 }

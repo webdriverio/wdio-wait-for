@@ -12,7 +12,7 @@
 
 ### visibilityOf
 
-▸ **visibilityOf**(`selector`: *string*): *function*
+▸ **visibilityOf**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
 
 A condition for checking the element to be visible
 
@@ -23,11 +23,11 @@ browser.waitUntil(visibilityOf('.header'));
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selector` | *string* | The selector to check |
+| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
 
 **Returns:** () => *Promise*<boolean\>
 
 An expected condition that returns a promise
     representing whether the element is visible.
 
-Defined in: [element/visibilityOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/8456462/src/element/visibilityOf.ts#L13)
+Defined in: [element/visibilityOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/visibilityOf.ts#L13)
