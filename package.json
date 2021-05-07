@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elaichenkov/wdio-wait-for.git"
+    "url": "git+https://github.com/webdriverio-community/wdio-wait-for.git"
   },
   "keywords": [
     "wdio",
@@ -42,7 +42,7 @@
   ],
   "author": "Yevhen Laichenkov <elaichenkov@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/elaichenkov/wdio-wait-for",
+  "homepage": "https://github.com/webdriverio-community/wdio-wait-for",
   "devDependencies": {
     "@types/jasmine": "^3.6.9",
     "@wdio/cli": "^7.4.6",
