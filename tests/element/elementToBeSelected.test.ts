@@ -9,10 +9,10 @@ describe('elementToBeSelected', () => {
     const checkbox = await $(selector);
     await checkbox.click();
 
-    expect(await elementToBeSelected(selector)()).toBe(true);
+    expect(await elementToBeSelected(selector).call(browser)).toBe(true);
   });
 
   it('should verify that method returns false when element is not selected', async () => {
-    expect(await elementToBeSelected($(selector))()).toBe(false);
+    expect(await elementToBeSelected($(selector)).call(browser)).toBe(false);
   });
 });

@@ -9,7 +9,7 @@ describe('visibilityOf', () => {
     const addElementButton = await $('button');
     await addElementButton.click();
 
-    expect(await visibilityOf(selector)()).toBe(true);
+    expect(await visibilityOf(selector).call(browser)).toBe(true);
   });
 
   it('should verify that method returns false when element is not visible', async () => {
@@ -19,6 +19,6 @@ describe('visibilityOf', () => {
     const deleteButton = await $(selector);
     await deleteButton.click();
 
-    expect(await visibilityOf($(selector))()).toBe(false);
+    expect(await visibilityOf($(selector)).call(browser)).toBe(false);
   });
 });
