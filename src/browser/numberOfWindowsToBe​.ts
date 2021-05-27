@@ -1,3 +1,5 @@
+import type { Browser } from 'webdriverio';
+
 /**
  * A condition for checking the number of opened windows.
  *
@@ -10,8 +12,8 @@
  */
 
 export function numberOfWindowsToBe(expectedNumber: number): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
-    const actualWindows = await browser.getWindowHandles();
+  return async function (this: Browser<'async'>): Promise<boolean> {
+    const actualWindows = await this.getWindowHandles();
 
     return actualWindows.length === expectedNumber;
   };

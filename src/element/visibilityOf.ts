@@ -1,3 +1,6 @@
+import { getElement } from './../utils';
+import type { Browser } from 'webdriverio';
+
 /**
  * A condition for checking the element to be visible
  *
@@ -11,9 +14,9 @@
  */
 
 export function visibilityOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
+  return async function (this: Browser<'async'>): Promise<boolean> {
     try {
-      const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
+      const element = await getElement(selectorOrElement);
       const isVisible = await element.isDisplayed();
 
       return isVisible;

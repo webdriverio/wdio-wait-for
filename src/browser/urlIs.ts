@@ -1,3 +1,5 @@
+import type { Browser } from 'webdriverio';
+
 /**
  * A condition for checking URL of the current page to be a specific url.
  *
@@ -10,8 +12,8 @@
  */
 
 export function urlIs(expectedUrl: string): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
-    const actualUrl = await browser.getUrl();
+  return async function (this: Browser<'async'>): Promise<boolean> {
+    const actualUrl = await this.getUrl();
 
     return actualUrl === expectedUrl;
   };
