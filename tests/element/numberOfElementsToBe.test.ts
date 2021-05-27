@@ -10,13 +10,13 @@ describe('numberOfElementsToBe', () => {
     await addElementButton.click();
     await addElementButton.click();
 
-    expect(await numberOfElementsToBe(selector, 2).call(browser)).toBe(true);
+    expect(await numberOfElementsToBe(selector, 2)()).toBe(true);
   });
 
   it('should verify that method returns false when number of elements not to be', async () => {
     const addElementButton = await $('button');
     await addElementButton.click();
 
-    expect(await numberOfElementsToBe($$(selector), 2).call(browser)).toBe(false);
+    expect(await numberOfElementsToBe($$(selector), 2)()).toBe(false);
   });
 });

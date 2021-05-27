@@ -1,5 +1,4 @@
 import { getElement } from './../utils';
-import type { Browser } from 'webdriverio';
 
 /**
  * A condition for checking size of element with given selector
@@ -18,7 +17,7 @@ export function sizeOfElementsToBe(
   selectorOrElement: string | Promise<WebdriverIO.Element>,
   expectedSize: { width: number; height: number },
 ): () => Promise<boolean> {
-  return async function (this: Browser<'async'>): Promise<boolean> {
+  return async function (): Promise<boolean> {
     const element = await getElement(selectorOrElement);
     const actualSize = await element.getSize();
 

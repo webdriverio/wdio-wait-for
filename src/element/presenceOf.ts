@@ -1,5 +1,4 @@
 import { getElement } from './../utils';
-import type { Browser } from 'webdriverio';
 
 /**
  * A condition for checking that an element is present on the DOM of a page
@@ -14,7 +13,7 @@ import type { Browser } from 'webdriverio';
  */
 
 export function presenceOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
-  return async function (this: Browser<'async'>): Promise<boolean> {
+  return async function (): Promise<boolean> {
     try {
       const element = await getElement(selectorOrElement);
       const isVisible = await element.isExisting();

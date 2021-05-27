@@ -1,5 +1,4 @@
 import { getElement } from './../utils';
-import type { Browser } from 'webdriverio';
 
 /**
  * A condition for checking an element contains a specific value
@@ -18,7 +17,7 @@ export function textToBePresentInElementValue(
   selectorOrElement: string | Promise<WebdriverIO.Element>,
   expectedValue: string,
 ): () => Promise<boolean> {
-  return async function (this: Browser<'async'>): Promise<boolean> {
+  return async function (): Promise<boolean> {
     const element = await getElement(selectorOrElement);
     const value = await element.getValue();
 
