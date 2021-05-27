@@ -10,21 +10,21 @@ describe('Logical', () => {
       const shouldReturnTrue = EC.invisibilityOf(selector);
       const shouldReturnTrueToo = EC.textToBePresentInElement('button', 'Add');
 
-      expect(await EC.and(shouldReturnTrue, shouldReturnTrueToo)()).toBe(true);
+      expect(await EC.and(shouldReturnTrue, shouldReturnTrueToo).call(browser)).toBe(true);
     });
 
     it('should verify method returns false when 1 function returns false and 2 function returns true', async () => {
       const shouldReturnFalse = EC.visibilityOf(selector);
       const shouldReturnTrue = EC.textToBePresentInElement('button', 'Add');
 
-      expect(await EC.and(shouldReturnFalse, shouldReturnTrue)()).toBe(false);
+      expect(await EC.and(shouldReturnFalse, shouldReturnTrue).call(browser)).toBe(false);
     });
 
     it('should verify method returns false when 1 function returns false and 2 function returns false', async () => {
       const shouldReturnFalse = EC.visibilityOf(selector);
       const shouldReturnFalseToo = EC.textToBePresentInElement('button', 'Delete');
 
-      expect(await EC.and(shouldReturnFalse, shouldReturnFalseToo)()).toBe(false);
+      expect(await EC.and(shouldReturnFalse, shouldReturnFalseToo).call(browser)).toBe(false);
     });
   });
 
@@ -33,14 +33,14 @@ describe('Logical', () => {
       const shouldReturnFalse = EC.visibilityOf(selector);
       const shouldReturnTrue = EC.textToBePresentInElement('button', 'Add');
 
-      expect(await EC.or(shouldReturnFalse, shouldReturnTrue)()).toBe(true);
+      expect(await EC.or(shouldReturnFalse, shouldReturnTrue).call(browser)).toBe(true);
     });
 
     it('should verify method returns false when 1 function returns false and 2 function returns false', async () => {
       const shouldReturnFalse = EC.visibilityOf(selector);
       const shouldReturnFalseToo = EC.textToBePresentInElement('button', 'Delete');
 
-      expect(await EC.or(shouldReturnFalse, shouldReturnFalseToo)()).toBe(false);
+      expect(await EC.or(shouldReturnFalse, shouldReturnFalseToo).call(browser)).toBe(false);
     });
   });
 
@@ -48,13 +48,13 @@ describe('Logical', () => {
     it('should verify method returns true when function returns false', async () => {
       const shouldReturnFalse = EC.visibilityOf(selector);
 
-      expect(await EC.not(shouldReturnFalse)()).toBe(true);
+      expect(await EC.not(shouldReturnFalse).call(browser)).toBe(true);
     });
 
     it('should verify method returns false when function returns false', async () => {
       const shouldReturnTrue = EC.invisibilityOf(selector);
 
-      expect(await EC.not(shouldReturnTrue)()).toBe(false);
+      expect(await EC.not(shouldReturnTrue).call(browser)).toBe(false);
     });
   });
 
@@ -63,14 +63,14 @@ describe('Logical', () => {
       const shouldReturnTrue = EC.invisibilityOf(selector);
       const shouldReturnFalse = EC.visibilityOf(selector);
 
-      expect(await EC.and(EC.not(shouldReturnFalse), shouldReturnTrue)()).toBe(true);
+      expect(await EC.and(EC.not(shouldReturnFalse), shouldReturnTrue).call(browser)).toBe(true);
     });
 
     it('should verify method returns false', async () => {
       const shouldReturnTrue = EC.invisibilityOf(selector);
       const shouldReturnFalse = EC.visibilityOf(selector);
 
-      expect(await EC.and(EC.not(shouldReturnTrue), shouldReturnFalse)()).toBe(false);
+      expect(await EC.and(EC.not(shouldReturnTrue), shouldReturnFalse).call(browser)).toBe(false);
     });
   });
 
@@ -78,13 +78,13 @@ describe('Logical', () => {
     it('should verify method returns true', async () => {
       const shouldReturnTrue = EC.invisibilityOf(selector);
 
-      expect(await EC.or(EC.not(shouldReturnTrue), shouldReturnTrue)()).toBe(true);
+      expect(await EC.or(EC.not(shouldReturnTrue), shouldReturnTrue).call(browser)).toBe(true);
     });
 
     it('should verify method returns false', async () => {
       const shouldReturnTrue = EC.invisibilityOf(selector);
 
-      expect(await EC.or(EC.not(shouldReturnTrue), EC.not(shouldReturnTrue))()).toBe(false);
+      expect(await EC.or(EC.not(shouldReturnTrue), EC.not(shouldReturnTrue)).call(browser)).toBe(false);
     });
   });
 });

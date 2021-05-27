@@ -21,7 +21,8 @@
     "release:patch": "npm run release -- patch",
     "release:minor": "npm run release -- minor",
     "release:major": "npm run release -- major",
-    "test": "npx wdio run tests/wdio.conf.ts"
+    "test": "npx wdio run tests/wdio.conf.ts",
+    "test:multiremote": "npx wdio run tests/wdio.multiremote.conf.ts"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,5 @@
+import { getElement } from './../utils';
+
 /**
  * A condition for checking an element contains a specific value
  *
@@ -15,8 +17,8 @@ export function textToBePresentInElementValue(
   selectorOrElement: string | Promise<WebdriverIO.Element>,
   expectedValue: string,
 ): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
-    const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
+  return async function (): Promise<boolean> {
+    const element = await getElement(selectorOrElement);
     const value = await element.getValue();
 
     return value.includes(expectedValue);

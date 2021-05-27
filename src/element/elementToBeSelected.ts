@@ -1,3 +1,5 @@
+import { getElement } from './../utils';
+
 /**
  * A condition for checking an element is visible and selected
  *
@@ -11,8 +13,8 @@
  */
 
 export function elementToBeSelected(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
-    const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
+  return async function (): Promise<boolean> {
+    const element = await getElement(selectorOrElement);
 
     return await element.isSelected();
   };

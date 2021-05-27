@@ -1,3 +1,5 @@
+import { getElements } from './../utils';
+
 /**
  * A condition for checking number of elements with given selector being more than defined number
  *
@@ -15,9 +17,8 @@ export function numberOfElementsToBeMoreThan(
   selectorOrElementArray: string | Promise<WebdriverIO.ElementArray>,
   expectedNumber: number,
 ): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
-    const elements =
-      typeof selectorOrElementArray === 'string' ? await $$(selectorOrElementArray) : await selectorOrElementArray;
+  return async function (): Promise<boolean> {
+    const elements = await getElements(selectorOrElementArray);
 
     return elements.length > expectedNumber;
   };

@@ -6,10 +6,10 @@ describe('alertIsPresent', () => {
   it('should verify that method returns true when element is clickable', async () => {
     await browser.execute('alert("Alert");');
 
-    expect(await alertIsPresent()()).toBe(true);
+    expect(await alertIsPresent().call(browser)).toBe(true);
   });
 
   it('should verify that method returns false when alert is not present', async () => {
-    expect(await alertIsPresent()()).toBe(false);
+    expect(await alertIsPresent().call(browser)).toBe(false);
   });
 });
