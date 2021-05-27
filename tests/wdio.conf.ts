@@ -2,6 +2,7 @@ export const config: WebdriverIO.Config = {
   runner: 'local',
 
   specs: ['./tests/**/*.test.ts'],
+  exclude: ['./tests/multiremote/multiremote.test.ts'],
 
   maxInstances: 10,
 
