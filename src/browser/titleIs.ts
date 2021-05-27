@@ -1,3 +1,5 @@
+import type { Browser } from 'webdriverio';
+
 /**
  * A condition for checking the title of a page
  *
@@ -10,8 +12,8 @@
  */
 
 export function titleIs(expectedTitle: string): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
-    const actualTitle = await browser.getTitle();
+  return async function (this: Browser<'async'>): Promise<boolean> {
+    const actualTitle = await this.getTitle();
 
     return actualTitle === expectedTitle;
   };

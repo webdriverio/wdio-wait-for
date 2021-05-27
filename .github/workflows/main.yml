@@ -33,3 +33,6 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Run multiremote tests
+        run: npm run test:multiremote

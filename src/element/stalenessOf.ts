@@ -1,3 +1,5 @@
+import { getElement } from './../utils';
+
 /**
  * A condition for checking that an element is not present on the DOM of a page
  *
@@ -11,9 +13,9 @@
  */
 
 export function stalenessOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
-  return async (): Promise<boolean> => {
+  return async function (): Promise<boolean> {
     try {
-      const element = typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
+      const element = await getElement(selectorOrElement);
       const isVisible = await element.isExisting();
 
       return !isVisible;
