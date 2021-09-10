@@ -1,4 +1,4 @@
-# WDIO-WAIT-FOR [![Test](https://github.com/elaichenkov/wdio-wait-for/actions/workflows/main.yml/badge.svg)](https://github.com/elaichenkov/wdio-wait-for/actions/workflows/main.yml)
+# WDIO-WAIT-FOR [![Test](https://github.com/elaichenkov/wdio-wait-for/actions/workflows/main.yml/badge.svg)](https://github.com/elaichenkov/wdio-wait-for/actions/workflows/main.yml) [![Total npm downloads](https://img.shields.io/npm/dt/wdio-wait-for.svg)](https://www.npmjs.com/package/wdio-wait-for)
 
 > wdio-wait-for is a Node.js library for [WebdriverIO](http://webdriver.io/) that supplies a set of common conditions that provides functionalities to wait for certain conditions till a defined task is complete.
 
