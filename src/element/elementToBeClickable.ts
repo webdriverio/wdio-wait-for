@@ -1,4 +1,5 @@
 import { getElement } from './../utils';
+import {ChainablePromiseElement} from "webdriverio";
 
 /**
  * A condition for checking an element is visible and clickable
@@ -12,7 +13,7 @@ import { getElement } from './../utils';
  *     representing whether the element is clickable.
  */
 
-export function elementToBeClickable(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
+export function elementToBeClickable(selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     const element = await getElement(selectorOrElement);
 

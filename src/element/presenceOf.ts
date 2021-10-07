@@ -1,4 +1,5 @@
 import { getElement } from './../utils';
+import {ChainablePromiseElement} from "webdriverio";
 
 /**
  * A condition for checking that an element is present on the DOM of a page
@@ -12,7 +13,7 @@ import { getElement } from './../utils';
  *     representing whether the element is present on the DOM.
  */
 
-export function presenceOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
+export function presenceOf(selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     try {
       const element = await getElement(selectorOrElement);

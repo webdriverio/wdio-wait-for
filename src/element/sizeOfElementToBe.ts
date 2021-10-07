@@ -1,4 +1,5 @@
 import { getElement } from './../utils';
+import {ChainablePromiseElement} from "webdriverio";
 
 /**
  * A condition for checking size of element with given selector
@@ -14,7 +15,7 @@ import { getElement } from './../utils';
  */
 
 export function sizeOfElementsToBe(
-  selectorOrElement: string | Promise<WebdriverIO.Element>,
+  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
   expectedSize: { width: number; height: number },
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {

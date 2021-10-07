@@ -1,4 +1,5 @@
 import { getElement } from './../utils';
+import {ChainablePromiseElement} from "webdriverio";
 
 /**
  * A condition for checking an element contains a specific value
@@ -14,7 +15,7 @@ import { getElement } from './../utils';
  */
 
 export function textToBePresentInElementValue(
-  selectorOrElement: string | Promise<WebdriverIO.Element>,
+  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
   expectedValue: string,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {

@@ -1,4 +1,5 @@
 import { getElement } from './../utils';
+import {ChainablePromiseElement} from "webdriverio";
 
 /**
  * A condition for checking the element to be visible
@@ -12,7 +13,7 @@ import { getElement } from './../utils';
  *     representing whether the element is visible.
  */
 
-export function visibilityOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
+export function visibilityOf(selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     try {
       const element = await getElement(selectorOrElement);
