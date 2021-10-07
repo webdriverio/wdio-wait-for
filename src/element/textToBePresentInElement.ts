@@ -1,3 +1,4 @@
+import type { ChainablePromiseElement } from 'webdriverio';
 import { getElement } from './../utils';
 
 /**
@@ -14,7 +15,7 @@ import { getElement } from './../utils';
  */
 
 export function textToBePresentInElement(
-  selectorOrElement: string | Promise<WebdriverIO.Element>,
+  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
   expectedText: string,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {

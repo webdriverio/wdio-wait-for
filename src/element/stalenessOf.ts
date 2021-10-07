@@ -1,3 +1,4 @@
+import type { ChainablePromiseElement } from 'webdriverio';
 import { getElement } from './../utils';
 
 /**
@@ -12,7 +13,9 @@ import { getElement } from './../utils';
  *     representing whether the element is not present on the DOM.
  */
 
-export function stalenessOf(selectorOrElement: string | Promise<WebdriverIO.Element>): () => Promise<boolean> {
+export function stalenessOf(
+  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
+): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     try {
       const element = await getElement(selectorOrElement);
