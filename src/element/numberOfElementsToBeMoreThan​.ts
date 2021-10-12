@@ -15,7 +15,7 @@ import {ChainablePromiseArray} from "webdriverio";
  */
 
 export function numberOfElementsToBeMoreThan(
-  selectorOrElementArray: string | ChainablePromiseArray<Promise<WebdriverIO.ElementArray>>,
+  selectorOrElementArray: string | ChainablePromiseArray<WebdriverIO.ElementArray>,
   expectedNumber: number,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {
