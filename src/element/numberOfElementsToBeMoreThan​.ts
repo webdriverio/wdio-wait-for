@@ -1,4 +1,5 @@
 import { getElements } from './../utils';
+import {ChainablePromiseArray} from "webdriverio";
 
 /**
  * A condition for checking number of elements with given selector being more than defined number
@@ -14,8 +15,8 @@ import { getElements } from './../utils';
  */
 
 export function numberOfElementsToBeMoreThan(
-  selectorOrElementArray: string | Promise<WebdriverIO.ElementArray>,
-  expectedNumber: number,
+    selectorOrElementArray: string | ChainablePromiseArray<WebdriverIO.ElementArray>,
+    expectedNumber: number,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     const elements = await getElements(selectorOrElementArray);
