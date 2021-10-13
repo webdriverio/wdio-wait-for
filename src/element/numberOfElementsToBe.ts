@@ -1,4 +1,5 @@
 import { getElements } from './../utils';
+import {ChainablePromiseArray} from "webdriverio";
 
 /**
  * A condition for checking number of elements with given selector
@@ -6,7 +7,7 @@ import { getElements } from './../utils';
  * @example
  * browser.waitUntil(numberOfElementsToBe('a', 4));
  *
- * @param {!string | WebdriverIO.ElementArray} selectorOrElementArray The selector or elements array to check
+ * @param {!string | ChainablePromiseArray<WebdriverIO.ElementArray>} selectorOrElementArray The selector or elements array to check
  * @param {!number} expectedNumber The selector to check
  *
  * @returns {!function} An expected condition that returns a promise
@@ -14,7 +15,7 @@ import { getElements } from './../utils';
  */
 
 export function numberOfElementsToBe(
-  selectorOrElementArray: string | Promise<WebdriverIO.ElementArray>,
+  selectorOrElementArray: string | ChainablePromiseArray<WebdriverIO.ElementArray>,
   expectedNumber: number,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {

@@ -1,5 +1,5 @@
 import { getElements } from './../utils';
-import {ChainablePromiseArray} from "webdriverio";
+import { ChainablePromiseArray } from 'webdriverio';
 
 /**
  * A condition for checking number of elements with given selector being less than defined number
@@ -7,7 +7,7 @@ import {ChainablePromiseArray} from "webdriverio";
  * @example
  * browser.waitUntil(numberOfElementsToBeLessThan('a', 2));
  *
- * @param {!string | WebdriverIO.ElementArray} selectorOrElementArray The selector or elements array to check
+ * @param {!string | ChainablePromiseArray<WebdriverIO.ElementArray>} selectorOrElementArray The selector or elements array to check
  * @param {!number} expectedNumber The selector to check
  *
  * @returns {!function} An expected condition that returns a promise
