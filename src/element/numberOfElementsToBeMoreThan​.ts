@@ -1,5 +1,5 @@
 import { getElements } from './../utils';
-import { ChainablePromiseArray } from 'webdriverio';
+import type { ChainablePromiseArray } from 'webdriverio';
 
 /**
  * A condition for checking number of elements with given selector being more than defined number
