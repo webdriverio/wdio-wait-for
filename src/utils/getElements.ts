@@ -1,4 +1,4 @@
-import { ChainablePromiseArray } from 'webdriverio';
+import type { ChainablePromiseArray } from 'webdriverio';
 
 export const getElements = (
   selectorOrElementArray: string | ChainablePromiseArray<WebdriverIO.ElementArray>,
