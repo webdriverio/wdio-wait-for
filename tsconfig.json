@@ -9,5 +9,5 @@
       "types": ["node", "webdriverio/async", "@wdio/jasmine-framework"],
       "lib": ["es2016", "DOM"]
     },
-    "exclude": ["node_modules", "lib"]
+    "exclude": ["node_modules", "lib", "tests"]
   }

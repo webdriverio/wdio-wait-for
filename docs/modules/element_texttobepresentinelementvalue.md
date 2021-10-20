@@ -31,4 +31,4 @@ browser.waitUntil(textToBePresentInElementValue('input', 'password'));
 A condition that returns a promise
     representing whether the element contains a specific value.
 
-Defined in: [element/textToBePresentInElementValue.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/textToBePresentInElementValue.ts#L14)
+Defined in: [element/textToBePresentInElementValue.ts:14](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/textToBePresentInElementValue.ts#L14)

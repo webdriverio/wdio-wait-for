@@ -31,4 +31,4 @@ browser.waitUntil(or(numberOfWindowsToBe(3), numberOfWindowsToBe(2))));
 An expected condition that returns a promise which
     evaluates to the result of the logical or.
 
-Defined in: [logical/or.ts:16](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/logical/or.ts#L16)
+Defined in: [logical/or.ts:16](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/logical/or.ts#L16)

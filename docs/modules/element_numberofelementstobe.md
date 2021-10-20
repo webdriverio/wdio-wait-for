@@ -31,4 +31,4 @@ browser.waitUntil(numberOfElementsToBe('a', 4));
 An expected condition that returns a promise
     representing whether the element length.
 
-Defined in: [element/numberOfElementsToBe.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/numberOfElementsToBe.ts#L14)
+Defined in: [element/numberOfElementsToBe.ts:14](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/numberOfElementsToBe.ts#L14)

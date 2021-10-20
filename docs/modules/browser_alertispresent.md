@@ -24,4 +24,4 @@ browser.waitUntil(alertIsPresent());
 A condition that returns a promise
     representing whether an alert is present.
 
-Defined in: [browser/alertIsPresent.ts:11](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/browser/alertIsPresent.ts#L11)
+Defined in: [browser/alertIsPresent.ts:11](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/browser/alertIsPresent.ts#L11)

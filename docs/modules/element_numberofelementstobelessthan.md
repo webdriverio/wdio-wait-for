@@ -31,4 +31,4 @@ browser.waitUntil(numberOfElementsToBeLessThan('a', 2));
 An expected condition that returns a promise
     representing whether the element length is less than defined number.
 
-Defined in: [element/numberOfElementsToBeLessThan.ts:14](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/numberOfElementsToBeLessThan.ts#L14)
+Defined in: [element/numberOfElementsToBeLessThan.ts:14](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/numberOfElementsToBeLessThan.ts#L14)

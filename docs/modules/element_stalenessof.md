@@ -30,4 +30,4 @@ browser.waitUntil(stalenessOf('.header'));
 An expected condition that returns a promise
     representing whether the element is not present on the DOM.
 
-Defined in: [element/stalenessOf.ts:13](https://github.com/elaichenkov/wdio-wait-for/blob/074de0f/src/element/stalenessOf.ts#L13)
+Defined in: [element/stalenessOf.ts:13](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/stalenessOf.ts#L13)
