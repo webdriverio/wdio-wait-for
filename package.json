@@ -52,7 +52,7 @@
     "@wdio/local-runner": "^7.14.1",
     "@wdio/spec-reporter": "^7.14.1",
     "chromedriver": "^94.0.0",
-    "jasmine": "^3.10.0",
+    "jasmine": "^4.0.1",
     "prettier": "^2.4.1",
     "release-it": "^14.11.6",
     "ts-node": "^10.3.0",
