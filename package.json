@@ -4,9 +4,6 @@
   "description": "a library of conditions that are useful for end-to-end tests",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
-  "files": [
-    "lib/src"
-  ],
   "scripts": {
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
