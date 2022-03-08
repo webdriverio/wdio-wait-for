@@ -2,8 +2,8 @@
   "name": "wdio-wait-for",
   "version": "2.2.3",
   "description": "a library of conditions that are useful for end-to-end tests",
-  "main": "lib/src/index.js",
-  "types": "lib/src/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
