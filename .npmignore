@@ -1,0 +1,9 @@
+.github
+docs
+src
+tests
+!*.d.ts
+/*.json
+*.tgz
+.nvmrc
+.prettierrc
