@@ -43,7 +43,7 @@
   "license": "MIT",
   "homepage": "https://github.com/webdriverio/wdio-wait-for",
   "devDependencies": {
-    "@types/jasmine": "^3.10.3",
+    "@types/jasmine": "^4.0.0",
     "@wdio/cli": "^7.16.16",
     "@wdio/jasmine-framework": "^7.16.14",
     "@wdio/local-runner": "^7.16.16",
