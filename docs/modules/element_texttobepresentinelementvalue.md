@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/textToBePresentInElementValue
+[wdio-wait-for](../README.md) / element/textToBePresentInElementValue
 
 # Module: element/textToBePresentInElementValue
 
@@ -6,29 +6,47 @@
 
 ### Functions
 
-- [textToBePresentInElementValue](element_texttobepresentinelementvalue.md#texttobepresentinelementvalue)
+- [textToBePresentInElementValue](element_textToBePresentInElementValue.md#texttobepresentinelementvalue)
 
 ## Functions
 
 ### textToBePresentInElementValue
 
-▸ **textToBePresentInElementValue**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>, `expectedValue`: *string*): *function*
+▸ **textToBePresentInElementValue**(`selectorOrElement`, `expectedValue`): () => `Promise`<`boolean`\>
 
 A condition for checking an element contains a specific value
 
-**`example`** 
+**`example`**
 browser.waitUntil(textToBePresentInElementValue('input', 'password'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
-| `expectedValue` | *string* | The expected value to verify |
+| `selectorOrElement` | [`StringOrElement`](utils_element_types.md#stringorelement) | The selector or element to check |
+| `expectedValue` | `string` | The expected value to verify |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether the element contains a specific value.
 
-Defined in: [element/textToBePresentInElementValue.ts:14](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/textToBePresentInElementValue.ts#L14)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking an element contains a specific value
+
+**`example`**
+browser.waitUntil(textToBePresentInElementValue('input', 'password'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether the element contains a specific value.
+
+#### Defined in
+
+[element/textToBePresentInElementValue.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/textToBePresentInElementValue.ts#L17)

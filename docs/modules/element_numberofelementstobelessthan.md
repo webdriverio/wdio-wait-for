@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/numberOfElementsToBeLessThan
+[wdio-wait-for](../README.md) / element/numberOfElementsToBeLessThan
 
 # Module: element/numberOfElementsToBeLessThan
 
@@ -6,29 +6,47 @@
 
 ### Functions
 
-- [numberOfElementsToBeLessThan](element_numberofelementstobelessthan.md#numberofelementstobelessthan)
+- [numberOfElementsToBeLessThan](element_numberOfElementsToBeLessThan.md#numberofelementstobelessthan)
 
 ## Functions
 
 ### numberOfElementsToBeLessThan
 
-▸ **numberOfElementsToBeLessThan**(`selectorOrElementArray`: *string* \| *Promise*<WebdriverIO.ElementArray\>, `expectedNumber`: *number*): *function*
+▸ **numberOfElementsToBeLessThan**(`selectorOrElementArray`, `expectedNumber`): () => `Promise`<`boolean`\>
 
 A condition for checking number of elements with given selector being less than defined number
 
-**`example`** 
+**`example`**
 browser.waitUntil(numberOfElementsToBeLessThan('a', 2));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selectorOrElementArray` | *string* \| *Promise*<WebdriverIO.ElementArray\> | The selector or elements array to check |
-| `expectedNumber` | *number* | The selector to check |
+| `selectorOrElementArray` | [`StringOrElements`](utils_element_types.md#stringorelements) | The selector or elements array to check |
+| `expectedNumber` | `number` | The selector to check |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 An expected condition that returns a promise
     representing whether the element length is less than defined number.
 
-Defined in: [element/numberOfElementsToBeLessThan.ts:14](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/numberOfElementsToBeLessThan.ts#L14)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking number of elements with given selector being less than defined number
+
+**`example`**
+browser.waitUntil(numberOfElementsToBeLessThan('a', 2));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+An expected condition that returns a promise
+    representing whether the element length is less than defined number.
+
+#### Defined in
+
+[element/numberOfElementsToBeLessThan.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/numberOfElementsToBeLessThan.ts#L17)

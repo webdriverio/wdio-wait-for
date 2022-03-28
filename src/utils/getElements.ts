@@ -1,7 +1,6 @@
-import type { ChainablePromiseArray } from 'webdriverio';
+import type { StringOrElements } from './element.types';
+import type { ChainablePromiseArray, ElementArray } from 'webdriverio';
 
-export const getElements = (
-  selectorOrElementArray: string | ChainablePromiseArray<WebdriverIO.ElementArray>,
-): ChainablePromiseArray<WebdriverIO.ElementArray> => {
+export const getElements = (selectorOrElementArray: StringOrElements): ChainablePromiseArray<ElementArray> => {
   return typeof selectorOrElementArray === 'string' ? $$(selectorOrElementArray) : selectorOrElementArray;
 };

@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/stalenessOf
+[wdio-wait-for](../README.md) / element/stalenessOf
 
 # Module: element/stalenessOf
 
@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [stalenessOf](element_stalenessof.md#stalenessof)
+- [stalenessOf](element_stalenessOf.md#stalenessof)
 
 ## Functions
 
 ### stalenessOf
 
-▸ **stalenessOf**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
+▸ **stalenessOf**(`selectorOrElement`): () => `Promise`<`boolean`\>
 
 A condition for checking that an element is not present on the DOM of a page
 
-**`example`** 
+**`example`**
 browser.waitUntil(stalenessOf('.header'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
+| `selectorOrElement` | [`StringOrElement`](utils_element_types.md#stringorelement) | The selector or element to check |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 An expected condition that returns a promise
     representing whether the element is not present on the DOM.
 
-Defined in: [element/stalenessOf.ts:13](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/stalenessOf.ts#L13)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking that an element is not present on the DOM of a page
+
+**`example`**
+browser.waitUntil(stalenessOf('.header'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+An expected condition that returns a promise
+    representing whether the element is not present on the DOM.
+
+#### Defined in
+
+[element/stalenessOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/stalenessOf.ts#L16)

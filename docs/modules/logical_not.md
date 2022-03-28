@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical/not
+[wdio-wait-for](../README.md) / logical/not
 
 # Module: logical/not
 
@@ -12,21 +12,38 @@
 
 ### not
 
-▸ **not**(`expectedCondition`: () => *Promise*<boolean\>): *function*
+▸ **not**(`expectedCondition`): () => `Promise`<`boolean`\>
 
 Negates the result of a promise
 
-**`example`** 
+**`example`**
 browser.waitUntil(not(alertIsPresent()));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `expectedCondition` | () => *Promise*<boolean\> | The function to check |
+| `expectedCondition` | () => `Promise`<`boolean`\> | The function to check |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 An expected condition that returns that returns the negated value.
 
-Defined in: [logical/not.ts:12](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/logical/not.ts#L12)
+▸ (): `Promise`<`boolean`\>
+
+Negates the result of a promise
+
+**`example`**
+browser.waitUntil(not(alertIsPresent()));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+An expected condition that returns that returns the negated value.
+
+#### Defined in
+
+[logical/not.ts:12](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/logical/not.ts#L12)

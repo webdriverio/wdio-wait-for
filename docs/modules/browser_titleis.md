@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser/titleIs
+[wdio-wait-for](../README.md) / browser/titleIs
 
 # Module: browser/titleIs
 
@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [titleIs](browser_titleis.md#titleis)
+- [titleIs](browser_titleIs.md#titleis)
 
 ## Functions
 
 ### titleIs
 
-▸ **titleIs**(`expectedTitle`: *string*): *function*
+▸ **titleIs**(`expectedTitle`): () => `Promise`<`boolean`\>
 
 A condition for checking the title of a page
 
-**`example`** 
+**`example`**
 browser.waitUntil(titleIs('Dashboard - Main page'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `expectedTitle` | *string* | The expected title |
+| `expectedTitle` | `string` | The expected title |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether browser's title is.
 
-Defined in: [browser/titleIs.ts:12](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/browser/titleIs.ts#L12)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking the title of a page
+
+**`example`**
+browser.waitUntil(titleIs('Dashboard - Main page'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether browser's title is.
+
+#### Defined in
+
+[browser/titleIs.ts:14](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/browser/titleIs.ts#L14)

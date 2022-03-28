@@ -1,90 +1,38 @@
-wdio-wait-for / [Modules](modules.md)
+wdio-wait-for
 
-# WDIO-WAIT-FOR [![Test](https://github.com/webdriverio/wdio-wait-for/actions/workflows/main.yml/badge.svg)](https://github.com/webdriverio/wdio-wait-for/actions/workflows/main.yml)
+# wdio-wait-for
 
-> wdio-wait-for is a Node.js library for [WebdriverIO](http://webdriver.io/) that supplies a set of common conditions that provides functionalities to wait for certain conditions till a defined task is complete.
+## Table of contents
 
-## Installation
-To use wdio-wait-for in your project, run:
+### Modules
 
-```shell
-npm i -D wdio-wait-for
-```
-## [API](./docs/modules.md)
-
-- [alertIsPresent](docs/modules/browser_alertispresent.md)
-- [numberOfWindowsToBe​](docs/modules/browser_numberofwindowstobe_.md)
-- [titleContains](docs/modules/browser_titlecontains.md)
-- [titleIs](docs/modules/browser_titleis.md)
-- [urlContains](docs/modules/browser_urlcontains.md)
-- [urlIs](docs/modules/browser_urlis.md)
-- [elementToBeClickable](docs/modules/element_elementtobeclickable.md)
-- [elementToBeEnabled](docs/modules/element_elementtobeenabled.md)
-- [elementToBeSelected](docs/modules/element_elementtobeselected.md)
-- [invisibilityOf](docs/modules/element_invisibilityof.md)
-- [numberOfElementsToBe](docs/modules/element_numberofelementstobe.md)
-- [numberOfElementsToBeLessThan](docs/modules/element_numberofelementstobelessthan.md)
-- [numberOfElementsToBeMoreThan​](docs/modules/element_numberofelementstobemorethan_.md)
-- [presenceOf](docs/modules/element_presenceof.md)
-- [sizeOfElementToBe](docs/modules/element_sizeofelementtobe.md)
-- [stalenessOf](docs/modules/element_stalenessof.md)
-- [textToBePresentInElement](docs/modules/element_texttobepresentinelement.md)
-- [textToBePresentInElementValue](docs/modules/element_texttobepresentinelementvalue.md)
-- [visibilityOf](docs/modules/element_visibilityof.md)
-- [and](docs/modules/logical_and.md)
-- [not](docs/modules/logical_not.md)
-- [or](docs/modules/logical_or.md)
-
-## Examples
-
-### Import
-#### JavaScript
-
-```javascript
-// import all methods
-const EC = require('wdio-wait-for');
-
-browser.waitUntil(EC.alertIsPresent(), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the alert to be present' })
-```
-
-```javascript
-// import specific method
-const { alertIsPresent } = require('wdio-wait-for');
-
-browser.waitUntil(alertIsPresent(), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the alert to be present' })
-```
-
-#### TypeScript
-
-```typescript
-// import all methods
-import * as EC from 'wdio-wait-for';
-
-browser.waitUntil(EC.elementToBeEnabled('input'), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the element to be enabled' })
-```
-
-```typescript
-// import specific method
-import { elementToBeEnabled } from 'wdio-wait-for';
-
-browser.waitUntil(elementToBeEnabled('input'), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the element to be enabled' })
-```
-### Wait for alert
-This code code snippet shows how to use conditions
-
-```typescript
-browser.waitUntil(alertIsPresent(), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the alert to be present' })
-```
-### Wait for number of elements to be
-This code code snippet shows how to use conditions
-
-```typescript
-browser.waitUntil(numberOfElementsToBe('.links', 2), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the 2 elements' })
-```
-
-## License
-
-wdio-wait-for is [MIT licensed](./LICENSE).
-
-## Author
-Yevhen Laichenkov <elaichenkov@gmail.com>
+- [browser](modules/browser.md)
+- [browser/alertIsPresent](modules/browser_alertIsPresent.md)
+- [browser/numberOfWindowsToBe​](modules/browser_numberOfWindowsToBe_.md)
+- [browser/titleContains](modules/browser_titleContains.md)
+- [browser/titleIs](modules/browser_titleIs.md)
+- [browser/urlContains](modules/browser_urlContains.md)
+- [browser/urlIs](modules/browser_urlIs.md)
+- [element](modules/element.md)
+- [element/elementToBeClickable](modules/element_elementToBeClickable.md)
+- [element/elementToBeEnabled](modules/element_elementToBeEnabled.md)
+- [element/elementToBeSelected](modules/element_elementToBeSelected.md)
+- [element/invisibilityOf](modules/element_invisibilityOf.md)
+- [element/numberOfElementsToBe](modules/element_numberOfElementsToBe.md)
+- [element/numberOfElementsToBeLessThan](modules/element_numberOfElementsToBeLessThan.md)
+- [element/numberOfElementsToBeMoreThan​](modules/element_numberOfElementsToBeMoreThan_.md)
+- [element/presenceOf](modules/element_presenceOf.md)
+- [element/sizeOfElementToBe](modules/element_sizeOfElementToBe.md)
+- [element/stalenessOf](modules/element_stalenessOf.md)
+- [element/textToBePresentInElement](modules/element_textToBePresentInElement.md)
+- [element/textToBePresentInElementValue](modules/element_textToBePresentInElementValue.md)
+- [element/visibilityOf](modules/element_visibilityOf.md)
+- [logical](modules/logical.md)
+- [logical/and](modules/logical_and.md)
+- [logical/logicalChain](modules/logical_logicalChain.md)
+- [logical/not](modules/logical_not.md)
+- [logical/or](modules/logical_or.md)
+- [utils](modules/utils.md)
+- [utils/element.types](modules/utils_element_types.md)
+- [utils/getElement](modules/utils_getElement.md)
+- [utils/getElements](modules/utils_getElements.md)

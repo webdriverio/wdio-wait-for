@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical
+[wdio-wait-for](../README.md) / logical
 
 # Module: logical
 
@@ -14,16 +14,16 @@
 
 ### and
 
-Re-exports: [and](logical_and.md#and)
+Re-exports [and](logical_and.md#and)
 
 ___
 
 ### not
 
-Re-exports: [not](logical_not.md#not)
+Re-exports [not](logical_not.md#not)
 
 ___
 
 ### or
 
-Re-exports: [or](logical_or.md#or)
+Re-exports [or](logical_or.md#or)

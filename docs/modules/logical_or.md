@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical/or
+[wdio-wait-for](../README.md) / logical/or
 
 # Module: logical/or
 
@@ -12,23 +12,42 @@
 
 ### or
 
-▸ **or**(...`args`: () => *Promise*<boolean\>[]): *function*
+▸ **or**(...`args`): () => `Promise`<`boolean`\>
 
 Chain a number of expected conditions using logical or, short circuiting
 at the first expected condition that evaluates to true.
 
-**`example`** 
+**`example`**
 browser.waitUntil(or(numberOfWindowsToBe(3), numberOfWindowsToBe(2))));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `...args` | () => *Promise*<boolean\>[] | Arguments |
+| `...args` | () => `Promise`<`boolean`\>[] | Arguments |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 An expected condition that returns a promise which
     evaluates to the result of the logical or.
 
-Defined in: [logical/or.ts:16](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/logical/or.ts#L16)
+▸ (): `Promise`<`boolean`\>
+
+Chain a number of expected conditions using logical or, short circuiting
+at the first expected condition that evaluates to true.
+
+**`example`**
+browser.waitUntil(or(numberOfWindowsToBe(3), numberOfWindowsToBe(2))));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+An expected condition that returns a promise which
+    evaluates to the result of the logical or.
+
+#### Defined in
+
+[logical/or.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/logical/or.ts#L16)

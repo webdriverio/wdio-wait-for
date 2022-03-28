@@ -1,4 +1,4 @@
-import type { ChainablePromiseElement } from 'webdriverio';
+import type { StringOrElement } from './../utils/element.types';
 import { getElement } from './../utils';
 
 /**
@@ -7,7 +7,7 @@ import { getElement } from './../utils';
  * @example
  * browser.waitUntil(textToBePresentInElement('.home', 'Home'));
  *
- * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
+ * @param {!string | ChainablePromiseElement<Element<'async'>>} selectorOrElement The selector or element to check
  * @param {!string} expectedText The expected text to verify
  *
  * @returns {!function} A condition that returns a promise
@@ -15,7 +15,7 @@ import { getElement } from './../utils';
  */
 
 export function textToBePresentInElement(
-  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
+  selectorOrElement: StringOrElement,
   expectedText: string,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {

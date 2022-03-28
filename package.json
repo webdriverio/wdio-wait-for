@@ -2,14 +2,17 @@
   "name": "wdio-wait-for",
   "version": "2.2.4",
   "description": "a library of conditions that are useful for end-to-end tests",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "files": [
+    "lib/src"
+  ],
   "scripts": {
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "version": "npm run format:write",
     "build": "tsc",
-    "doc": "typedoc --exclude '**/*+(index|.spec|.e2e).ts' src/**/*.ts",
+    "doc": "typedoc --readme none --exclude '**/*+(index|.spec|.e2e).ts' src/**/*.ts",
     "lint": "tslint -p tsconfig.json",
     "format:check": "prettier --check '(src|tests)/**/*.ts'",
     "format:write": "prettier --write '(src|tests)/**/*.ts'",

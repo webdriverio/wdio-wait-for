@@ -1,4 +1,4 @@
-import type { ChainablePromiseElement } from 'webdriverio';
+import type { StringOrElement } from './../utils/element.types';
 import { getElement } from './../utils';
 
 /**
@@ -7,15 +7,13 @@ import { getElement } from './../utils';
  * @example
  * browser.waitUntil(elementToBeEnabled('.btn'));
  *
- * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
+ * @param {!string | ChainablePromiseElement<Element<'async'>>} selectorOrElement The selector or element to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element is enabled.
  */
 
-export function elementToBeEnabled(
-  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
-): () => Promise<boolean> {
+export function elementToBeEnabled(selectorOrElement: StringOrElement): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     const element = await getElement(selectorOrElement);
 

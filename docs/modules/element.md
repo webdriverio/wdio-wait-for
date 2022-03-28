@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element
+[wdio-wait-for](../README.md) / element
 
 # Module: element
 
@@ -24,76 +24,76 @@
 
 ### elementToBeClickable
 
-Re-exports: [elementToBeClickable](element_elementtobeclickable.md#elementtobeclickable)
+Re-exports [elementToBeClickable](element_elementToBeClickable.md#elementtobeclickable)
 
 ___
 
 ### elementToBeEnabled
 
-Re-exports: [elementToBeEnabled](element_elementtobeenabled.md#elementtobeenabled)
+Re-exports [elementToBeEnabled](element_elementToBeEnabled.md#elementtobeenabled)
 
 ___
 
 ### elementToBeSelected
 
-Re-exports: [elementToBeSelected](element_elementtobeselected.md#elementtobeselected)
+Re-exports [elementToBeSelected](element_elementToBeSelected.md#elementtobeselected)
 
 ___
 
 ### invisibilityOf
 
-Re-exports: [invisibilityOf](element_invisibilityof.md#invisibilityof)
+Re-exports [invisibilityOf](element_invisibilityOf.md#invisibilityof)
 
 ___
 
 ### numberOfElementsToBe
 
-Re-exports: [numberOfElementsToBe](element_numberofelementstobe.md#numberofelementstobe)
+Re-exports [numberOfElementsToBe](element_numberOfElementsToBe.md#numberofelementstobe)
 
 ___
 
 ### numberOfElementsToBeLessThan
 
-Re-exports: [numberOfElementsToBeLessThan](element_numberofelementstobelessthan.md#numberofelementstobelessthan)
+Re-exports [numberOfElementsToBeLessThan](element_numberOfElementsToBeLessThan.md#numberofelementstobelessthan)
 
 ___
 
 ### numberOfElementsToBeMoreThan
 
-Re-exports: [numberOfElementsToBeMoreThan](element_numberofelementstobemorethan_.md#numberofelementstobemorethan)
+Re-exports [numberOfElementsToBeMoreThan](element_numberOfElementsToBeMoreThan_.md#numberofelementstobemorethan)
 
 ___
 
 ### presenceOf
 
-Re-exports: [presenceOf](element_presenceof.md#presenceof)
+Re-exports [presenceOf](element_presenceOf.md#presenceof)
 
 ___
 
 ### sizeOfElementsToBe
 
-Re-exports: [sizeOfElementsToBe](element_sizeofelementtobe.md#sizeofelementstobe)
+Re-exports [sizeOfElementsToBe](element_sizeOfElementToBe.md#sizeofelementstobe)
 
 ___
 
 ### stalenessOf
 
-Re-exports: [stalenessOf](element_stalenessof.md#stalenessof)
+Re-exports [stalenessOf](element_stalenessOf.md#stalenessof)
 
 ___
 
 ### textToBePresentInElement
 
-Re-exports: [textToBePresentInElement](element_texttobepresentinelement.md#texttobepresentinelement)
+Re-exports [textToBePresentInElement](element_textToBePresentInElement.md#texttobepresentinelement)
 
 ___
 
 ### textToBePresentInElementValue
 
-Re-exports: [textToBePresentInElementValue](element_texttobepresentinelementvalue.md#texttobepresentinelementvalue)
+Re-exports [textToBePresentInElementValue](element_textToBePresentInElementValue.md#texttobepresentinelementvalue)
 
 ___
 
 ### visibilityOf
 
-Re-exports: [visibilityOf](element_visibilityof.md#visibilityof)
+Re-exports [visibilityOf](element_visibilityOf.md#visibilityof)

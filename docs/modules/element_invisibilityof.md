@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/invisibilityOf
+[wdio-wait-for](../README.md) / element/invisibilityOf
 
 # Module: element/invisibilityOf
 
@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [invisibilityOf](element_invisibilityof.md#invisibilityof)
+- [invisibilityOf](element_invisibilityOf.md#invisibilityof)
 
 ## Functions
 
 ### invisibilityOf
 
-▸ **invisibilityOf**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>): *function*
+▸ **invisibilityOf**(`selectorOrElement`): () => `Promise`<`boolean`\>
 
 A condition for checking the element to be invisible
 
-**`example`** 
+**`example`**
 browser.waitUntil(invisibilityOf('.header'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
+| `selectorOrElement` | [`StringOrElement`](utils_element_types.md#stringorelement) | The selector or element to check |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 An expected condition that returns a promise
     representing whether the element is invisible.
 
-Defined in: [element/invisibilityOf.ts:13](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/invisibilityOf.ts#L13)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking the element to be invisible
+
+**`example`**
+browser.waitUntil(invisibilityOf('.header'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+An expected condition that returns a promise
+    representing whether the element is invisible.
+
+#### Defined in
+
+[element/invisibilityOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/invisibilityOf.ts#L16)

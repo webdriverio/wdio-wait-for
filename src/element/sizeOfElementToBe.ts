@@ -1,4 +1,4 @@
-import type { ChainablePromiseElement } from 'webdriverio';
+import type { StringOrElement } from './../utils/element.types';
 import { getElement } from './../utils';
 
 /**
@@ -7,7 +7,7 @@ import { getElement } from './../utils';
  * @example
  * browser.waitUntil(sizeOfElementsToBe('button', { width: 200, height: 200 }));
  *
- * @param {!string | WebdriverIO.Element} selectorOrElement The selector or element to check
+ * @param {!string | ChainablePromiseElement<Element<'async'>>} selectorOrElement The selector or element to check
  * @param {!{ width: number, height: number }} expectedSize The selector to check
  *
  * @returns {!function} An expected condition that returns a promise
@@ -15,7 +15,7 @@ import { getElement } from './../utils';
  */
 
 export function sizeOfElementsToBe(
-  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
+  selectorOrElement: StringOrElement,
   expectedSize: { width: number; height: number },
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {
