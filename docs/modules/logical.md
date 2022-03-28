@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical
+[wdio-wait-for](../README.md) / logical
 
 # Module: logical
 

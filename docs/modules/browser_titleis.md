@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser/titleIs
+[wdio-wait-for](../README.md) / browser/titleIs
 
 # Module: browser/titleIs
 
@@ -48,4 +48,4 @@ A condition that returns a promise
 
 #### Defined in
 
-[browser/titleIs.ts:14](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/browser/titleIs.ts#L14)
+[browser/titleIs.ts:14](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/browser/titleIs.ts#L14)

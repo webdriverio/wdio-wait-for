@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/elementToBeClickable
+[wdio-wait-for](../README.md) / element/elementToBeClickable
 
 # Module: element/elementToBeClickable
 
@@ -48,4 +48,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/elementToBeClickable.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/elementToBeClickable.ts#L16)
+[element/elementToBeClickable.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/elementToBeClickable.ts#L16)

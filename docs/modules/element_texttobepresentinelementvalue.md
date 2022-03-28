@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/textToBePresentInElementValue
+[wdio-wait-for](../README.md) / element/textToBePresentInElementValue
 
 # Module: element/textToBePresentInElementValue
 
@@ -49,4 +49,4 @@ A condition that returns a promise
 
 #### Defined in
 
-[element/textToBePresentInElementValue.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/textToBePresentInElementValue.ts#L17)
+[element/textToBePresentInElementValue.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/textToBePresentInElementValue.ts#L17)

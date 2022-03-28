@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/sizeOfElementToBe
+[wdio-wait-for](../README.md) / element/sizeOfElementToBe
 
 # Module: element/sizeOfElementToBe
 
@@ -51,4 +51,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/sizeOfElementToBe.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/sizeOfElementToBe.ts#L17)
+[element/sizeOfElementToBe.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/sizeOfElementToBe.ts#L17)

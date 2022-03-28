@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser/alertIsPresent
+[wdio-wait-for](../README.md) / browser/alertIsPresent
 
 # Module: browser/alertIsPresent
 
@@ -42,4 +42,4 @@ A condition that returns a promise
 
 #### Defined in
 
-[browser/alertIsPresent.ts:13](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/browser/alertIsPresent.ts#L13)
+[browser/alertIsPresent.ts:13](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/browser/alertIsPresent.ts#L13)

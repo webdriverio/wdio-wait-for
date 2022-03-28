@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/numberOfElementsToBeLessThan
+[wdio-wait-for](../README.md) / element/numberOfElementsToBeLessThan
 
 # Module: element/numberOfElementsToBeLessThan
 
@@ -49,4 +49,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/numberOfElementsToBeLessThan.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/numberOfElementsToBeLessThan.ts#L17)
+[element/numberOfElementsToBeLessThan.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/numberOfElementsToBeLessThan.ts#L17)

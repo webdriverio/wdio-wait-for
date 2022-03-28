@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/elementToBeEnabled
+[wdio-wait-for](../README.md) / element/elementToBeEnabled
 
 # Module: element/elementToBeEnabled
 
@@ -48,4 +48,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/elementToBeEnabled.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/elementToBeEnabled.ts#L16)
+[element/elementToBeEnabled.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/elementToBeEnabled.ts#L16)

@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical/not
+[wdio-wait-for](../README.md) / logical/not
 
 # Module: logical/not
 
@@ -46,4 +46,4 @@ An expected condition that returns that returns the negated value.
 
 #### Defined in
 
-[logical/not.ts:12](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/logical/not.ts#L12)
+[logical/not.ts:12](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/logical/not.ts#L12)

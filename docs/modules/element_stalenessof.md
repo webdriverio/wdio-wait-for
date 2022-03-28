@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/stalenessOf
+[wdio-wait-for](../README.md) / element/stalenessOf
 
 # Module: element/stalenessOf
 
@@ -48,4 +48,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/stalenessOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/stalenessOf.ts#L16)
+[element/stalenessOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/stalenessOf.ts#L16)

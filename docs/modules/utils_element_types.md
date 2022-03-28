@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / utils/element.types
+[wdio-wait-for](../README.md) / utils/element.types
 
 # Module: utils/element.types
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-utils/element.types.ts:3
+[utils/element.types.ts:3](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/utils/element.types.ts#L3)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-utils/element.types.ts:5
+[utils/element.types.ts:5](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/utils/element.types.ts#L5)

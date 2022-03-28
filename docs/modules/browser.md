@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser
+[wdio-wait-for](../README.md) / browser
 
 # Module: browser
 

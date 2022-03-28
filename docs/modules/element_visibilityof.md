@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/visibilityOf
+[wdio-wait-for](../README.md) / element/visibilityOf
 
 # Module: element/visibilityOf
 
@@ -48,4 +48,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/visibilityOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/visibilityOf.ts#L16)
+[element/visibilityOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/visibilityOf.ts#L16)

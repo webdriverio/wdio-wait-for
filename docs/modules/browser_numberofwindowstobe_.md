@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser/numberOfWindowsToBe​
+[wdio-wait-for](../README.md) / browser/numberOfWindowsToBe​
 
 # Module: browser/numberOfWindowsToBe​
 

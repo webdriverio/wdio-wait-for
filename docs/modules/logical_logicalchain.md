@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical/logicalChain
+[wdio-wait-for](../README.md) / logical/logicalChain
 
 # Module: logical/logicalChain
 
@@ -33,4 +33,4 @@
 
 #### Defined in
 
-[logical/logicalChain.ts:1](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/logical/logicalChain.ts#L1)
+[logical/logicalChain.ts:1](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/logical/logicalChain.ts#L1)

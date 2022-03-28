@@ -12,7 +12,7 @@
     "prepublishOnly": "npm test && npm run lint",
     "version": "npm run format:write",
     "build": "tsc",
-    "doc": "typedoc --exclude '**/*+(index|.spec|.e2e).ts' src/**/*.ts",
+    "doc": "typedoc --readme none --exclude '**/*+(index|.spec|.e2e).ts' src/**/*.ts",
     "lint": "tslint -p tsconfig.json",
     "format:check": "prettier --check '(src|tests)/**/*.ts'",
     "format:write": "prettier --write '(src|tests)/**/*.ts'",

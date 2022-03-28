@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / logical/and
+[wdio-wait-for](../README.md) / logical/and
 
 # Module: logical/and
 
@@ -50,4 +50,4 @@ An expected condition that returns a promise which
 
 #### Defined in
 
-[logical/and.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/logical/and.ts#L16)
+[logical/and.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/logical/and.ts#L16)

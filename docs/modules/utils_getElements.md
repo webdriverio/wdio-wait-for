@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / utils/getElements
+[wdio-wait-for](../README.md) / utils/getElements
 
 # Module: utils/getElements
 
@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[utils/getElements.ts:4](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/utils/getElements.ts#L4)
+[utils/getElements.ts:4](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/utils/getElements.ts#L4)

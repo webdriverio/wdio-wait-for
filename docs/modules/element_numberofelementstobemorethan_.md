@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/numberOfElementsToBeMoreThan​
+[wdio-wait-for](../README.md) / element/numberOfElementsToBeMoreThan​
 
 # Module: element/numberOfElementsToBeMoreThan​
 

@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / element/presenceOf
+[wdio-wait-for](../README.md) / element/presenceOf
 
 # Module: element/presenceOf
 
@@ -48,4 +48,4 @@ An expected condition that returns a promise
 
 #### Defined in
 
-[element/presenceOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/presenceOf.ts#L16)
+[element/presenceOf.ts:16](https://github.com/webdriverio-community/wdio-wait-for/blob/60821ec/src/element/presenceOf.ts#L16)
