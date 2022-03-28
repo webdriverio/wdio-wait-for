@@ -1,4 +1,4 @@
-[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser/numberOfWindowsToBe%u200B
+[wdio-wait-for](../README.md) / [Modules](../modules.md) / browser/numberOfWindowsToBe​
 
 # Module: browser/numberOfWindowsToBe​
 
@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [numberOfWindowsToBe](browser_numberofwindowstobe_.md#numberofwindowstobe)
+- [numberOfWindowsToBe](browser_numberOfWindowsToBe_.md#numberofwindowstobe)
 
 ## Functions
 
 ### numberOfWindowsToBe
 
-▸ **numberOfWindowsToBe**(`expectedNumber`: *number*): *function*
+▸ **numberOfWindowsToBe**(`expectedNumber`): () => `Promise`<`boolean`\>
 
 A condition for checking the number of opened windows.
 
-**`example`** 
+**`example`**
 browser.waitUntil(numberOfWindowsToBe(2));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `expectedNumber` | *number* | The expected url |
+| `expectedNumber` | `number` | The expected url |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether browser's windows length.
 
-Defined in: browser/numberOfWindowsToBe​.ts:12
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking the number of opened windows.
+
+**`example`**
+browser.waitUntil(numberOfWindowsToBe(2));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether browser's windows length.
+
+#### Defined in
+
+browser/numberOfWindowsToBe​.ts:14

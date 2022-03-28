@@ -6,22 +6,40 @@
 
 ### Functions
 
-- [alertIsPresent](browser_alertispresent.md#alertispresent)
+- [alertIsPresent](browser_alertIsPresent.md#alertispresent)
 
 ## Functions
 
 ### alertIsPresent
 
-▸ **alertIsPresent**(): *function*
+▸ **alertIsPresent**(): () => `Promise`<`boolean`\>
 
 A condition for checking an alert on the page
 
-**`example`** 
+**`example`**
 browser.waitUntil(alertIsPresent());
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether an alert is present.
 
-Defined in: [browser/alertIsPresent.ts:11](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/browser/alertIsPresent.ts#L11)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking an alert on the page
+
+**`example`**
+browser.waitUntil(alertIsPresent());
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether an alert is present.
+
+#### Defined in
+
+[browser/alertIsPresent.ts:13](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/browser/alertIsPresent.ts#L13)

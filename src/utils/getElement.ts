@@ -1,7 +1,6 @@
-import type { ChainablePromiseElement } from 'webdriverio';
+import type { Element } from 'webdriverio';
+import type { StringOrElement } from './../utils/element.types';
 
-export const getElement = async (
-  selectorOrElement: string | ChainablePromiseElement<Promise<WebdriverIO.Element>>,
-): Promise<WebdriverIO.Element> => {
+export const getElement = async (selectorOrElement: StringOrElement): Promise<Element<'async'>> => {
   return typeof selectorOrElement === 'string' ? await $(selectorOrElement) : await selectorOrElement;
 };

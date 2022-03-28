@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [urlContains](browser_urlcontains.md#urlcontains)
+- [urlContains](browser_urlContains.md#urlcontains)
 
 ## Functions
 
 ### urlContains
 
-▸ **urlContains**(`expectedUrl`: *string*): *function*
+▸ **urlContains**(`expectedUrl`): () => `Promise`<`boolean`\>
 
 A condition for checking the URL of the current page to contain specific text.
 
-**`example`** 
+**`example`**
 browser.waitUntil(urlContains('/v1'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `expectedUrl` | *string* | The expected url |
+| `expectedUrl` | `string` | The expected url |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether browser's url contains.
 
-Defined in: [browser/urlContains.ts:12](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/browser/urlContains.ts#L12)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking the URL of the current page to contain specific text.
+
+**`example`**
+browser.waitUntil(urlContains('/v1'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether browser's url contains.
+
+#### Defined in
+
+[browser/urlContains.ts:14](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/browser/urlContains.ts#L14)

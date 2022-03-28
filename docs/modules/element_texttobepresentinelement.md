@@ -6,29 +6,47 @@
 
 ### Functions
 
-- [textToBePresentInElement](element_texttobepresentinelement.md#texttobepresentinelement)
+- [textToBePresentInElement](element_textToBePresentInElement.md#texttobepresentinelement)
 
 ## Functions
 
 ### textToBePresentInElement
 
-▸ **textToBePresentInElement**(`selectorOrElement`: *string* \| *Promise*<WebdriverIO.Element\>, `expectedText`: *string*): *function*
+▸ **textToBePresentInElement**(`selectorOrElement`, `expectedText`): () => `Promise`<`boolean`\>
 
 A condition for checking an element contains a specific text
 
-**`example`** 
+**`example`**
 browser.waitUntil(textToBePresentInElement('.home', 'Home'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `selectorOrElement` | *string* \| *Promise*<WebdriverIO.Element\> | The selector or element to check |
-| `expectedText` | *string* | The expected text to verify |
+| `selectorOrElement` | [`StringOrElement`](utils_element_types.md#stringorelement) | The selector or element to check |
+| `expectedText` | `string` | The expected text to verify |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether the element contains a specific text.
 
-Defined in: [element/textToBePresentInElement.ts:14](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/element/textToBePresentInElement.ts#L14)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking an element contains a specific text
+
+**`example`**
+browser.waitUntil(textToBePresentInElement('.home', 'Home'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether the element contains a specific text.
+
+#### Defined in
+
+[element/textToBePresentInElement.ts:17](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/element/textToBePresentInElement.ts#L17)

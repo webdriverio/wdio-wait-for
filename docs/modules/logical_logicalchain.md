@@ -6,21 +6,31 @@
 
 ### Functions
 
-- [logicalChain](logical_logicalchain.md#logicalchain)
+- [logicalChain](logical_logicalChain.md#logicalchain)
 
 ## Functions
 
 ### logicalChain
 
-▸ **logicalChain**(`defaultRet`: *boolean*, `fns`: () => *Promise*<boolean\>[]): *function*
+▸ **logicalChain**(`defaultRet`, `fns`): () => `Promise`<`boolean`\>
 
-#### Parameters:
+#### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `defaultRet` | *boolean* |
-| `fns` | () => *Promise*<boolean\>[] |
+| `defaultRet` | `boolean` |
+| `fns` | () => `Promise`<`boolean`\>[] |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
 
-Defined in: [logical/logicalChain.ts:1](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/logical/logicalChain.ts#L1)
+`fn`
+
+▸ (): `Promise`<`boolean`\>
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[logical/logicalChain.ts:1](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/logical/logicalChain.ts#L1)

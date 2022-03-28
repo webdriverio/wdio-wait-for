@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [urlIs](browser_urlis.md#urlis)
+- [urlIs](browser_urlIs.md#urlis)
 
 ## Functions
 
 ### urlIs
 
-▸ **urlIs**(`expectedUrl`: *string*): *function*
+▸ **urlIs**(`expectedUrl`): () => `Promise`<`boolean`\>
 
 A condition for checking URL of the current page to be a specific url.
 
-**`example`** 
+**`example`**
 browser.waitUntil(urlIs('https://the-internet.herokuapp.com/'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `expectedUrl` | *string* | The expected url |
+| `expectedUrl` | `string` | The expected url |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether browser's url is.
 
-Defined in: [browser/urlIs.ts:12](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/browser/urlIs.ts#L12)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking URL of the current page to be a specific url.
+
+**`example`**
+browser.waitUntil(urlIs('https://the-internet.herokuapp.com/'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether browser's url is.
+
+#### Defined in
+
+[browser/urlIs.ts:14](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/browser/urlIs.ts#L14)

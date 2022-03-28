@@ -6,28 +6,46 @@
 
 ### Functions
 
-- [titleContains](browser_titlecontains.md#titlecontains)
+- [titleContains](browser_titleContains.md#titlecontains)
 
 ## Functions
 
 ### titleContains
 
-▸ **titleContains**(`expectedTitle`: *string*): *function*
+▸ **titleContains**(`expectedTitle`): () => `Promise`<`boolean`\>
 
 A condition for checking that the title contains a case-sensitive substring
 
-**`example`** 
+**`example`**
 browser.waitUntil(titleContains('Dashboard'));
 
-#### Parameters:
+#### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `expectedTitle` | *string* | The expected title |
+| `expectedTitle` | `string` | The expected title |
 
-**Returns:** () => *Promise*<boolean\>
+#### Returns
+
+`fn`
 
 A condition that returns a promise
     representing whether browser's title contains.
 
-Defined in: [browser/titleContains.ts:12](https://github.com/webdriverio/wdio-wait-for/blob/074de0f/src/browser/titleContains.ts#L12)
+▸ (): `Promise`<`boolean`\>
+
+A condition for checking that the title contains a case-sensitive substring
+
+**`example`**
+browser.waitUntil(titleContains('Dashboard'));
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+A condition that returns a promise
+    representing whether browser's title contains.
+
+#### Defined in
+
+[browser/titleContains.ts:14](https://github.com/webdriverio-community/wdio-wait-for/blob/5d4c2b2/src/browser/titleContains.ts#L14)
