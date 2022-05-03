@@ -54,7 +54,7 @@
     "chromedriver": "^100.0.0",
     "jasmine": "^4.0.2",
     "prettier": "^2.5.1",
-    "release-it": "^14.12.5",
+    "release-it": "^15.0.0",
     "ts-node": "^10.7.0",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
