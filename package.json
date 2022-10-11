@@ -12,19 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/webdriverio/wdio-wait-for.git"
   },
-  "main": "./lib/index.cjs.js",
+  "main": "./dist/cjs/index.js",
   "type": "module",
-  "module": "./lib/index.js",
+  "module": "./dist/index.js",
   "exports": {
     ".": [
       {
-        "import": "./lib/index.js",
-        "require": "./lib/index.cjs.js"
+        "import": "./dist/index.js",
+        "require": "./dist/cjs/index.js"
       },
-      "./lib/index.cjs.js"
+      "./dist/cjs/index.js"
     ]
   },
-  "types": "./lib/index.d.ts",
+  "types": "./dist/index.d.ts",
   "typeScriptVersion": "3.8.3",
   "engines": {
     "node": "^16.13 || >=18"
@@ -45,8 +45,10 @@
   ],
   "scripts": {
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "build": "tsc",
+    "prepublishOnly": "npm test && npm run test:lint",
+    "build": "run-s build:*",
+    "build:compile": "tsc",
+    "build:copy": "cp src/cjs/package.json dist/cjs/package.json",
     "doc": "typedoc --readme none --exclude '**/*+(index|.spec|.e2e).ts' src/**/*.ts",
     "release": "release-it --github.release",
     "release:ci": "npm run release -- --ci --npm.skipChecks --no-git.requireCleanWorkingDir",
@@ -57,7 +59,9 @@
     "test:lint": "eslint src tests",
     "test:e2e": "run-s test:e2e:*",
     "test:e2e:standard": "npx wdio run tests/wdio.conf.ts",
-    "test:e2e:multiremote": "npx wdio run tests/wdio.multiremote.conf.ts"
+    "test:e2e:multiremote": "npx wdio run tests/wdio.multiremote.conf.ts",
+    "test:interop": "node tests/interop/test.js",
+    "watch": "npm run build:compile -- --watch"
   },
   "devDependencies": {
     "@types/jasmine": "^4.3.0",

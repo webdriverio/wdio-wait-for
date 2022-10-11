@@ -1,0 +1,26 @@
+const b = require('./browser.js')
+const e = require('./element.js')
+const l = require('./logical.js')
+
+exports.alertIsPresent = b.alertIsPresent
+exports.numberOfWindowsToBe = b.numberOfWindowsToBe
+exports.titleContains = b.titleContains
+exports.titleIs = b.titleIs
+exports.urlContains = b.urlContains
+exports.urlIs = b.urlIs
+exports.elementToBeClickable = e.elementToBeClickable
+exports.elementToBeEnabled = e.elementToBeEnabled
+exports.elementToBeSelected = e.elementToBeSelected
+exports.invisibilityOf = e.invisibilityOf
+exports.numberOfElementsToBe = e.numberOfElementsToBe
+exports.numberOfElementsToBeLessThan = e.numberOfElementsToBeLessThan
+exports.numberOfElementsToBeMoreThan = e.numberOfElementsToBeMoreThan
+exports.presenceOf = e.presenceOf
+exports.sizeOfElementsToBe = e.sizeOfElementsToBe
+exports.stalenessOf = e.stalenessOf
+exports.textToBePresentInElement = e.textToBePresentInElement
+exports.textToBePresentInElementValue = e.textToBePresentInElementValue
+exports.visibilityOf = e.visibilityOf
+exports.and = l.and
+exports.not = l.not
+exports.or = l.or
