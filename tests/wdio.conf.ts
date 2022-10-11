@@ -1,11 +1,7 @@
 export const config: WebdriverIO.Config = {
-  runner: 'local',
-
   specs: ['./tests/**/*.test.ts'],
   exclude: ['./tests/multiremote/multiremote.test.ts'],
-
   maxInstances: 10,
-
   capabilities: [
     {
       maxInstances: 10,
@@ -22,25 +18,15 @@ export const config: WebdriverIO.Config = {
       },
     },
   ],
-
   logLevel: 'info',
-
   bail: 0,
-
   baseUrl: 'https://the-internet.herokuapp.com',
-
   waitforTimeout: 10000,
-
   connectionRetryTimeout: 120000,
-
   connectionRetryCount: 3,
-
   services: ['chromedriver'],
-
   framework: 'jasmine',
-
   reporters: ['spec'],
-
   jasmineOpts: {
     defaultTimeoutInterval: 60000,
   },

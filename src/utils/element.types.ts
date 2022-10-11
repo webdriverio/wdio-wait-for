@@ -1,5 +1,5 @@
-import type { ChainablePromiseElement, ChainablePromiseArray, ElementArray, Element } from 'webdriverio'
+import type { ChainablePromiseElement, ChainablePromiseArray, ElementArray } from 'webdriverio'
 
-export type StringOrElement = string | ChainablePromiseElement<Element<'async'>>
+export type StringOrElement = string | ChainablePromiseElement<WebdriverIO.Element>
 
 export type StringOrElements = string | ChainablePromiseArray<ElementArray>

@@ -7,7 +7,7 @@ import { getElement } from '../utils/index.js'
  * @example
  * browser.waitUntil(sizeOfElementsToBe('button', { width: 200, height: 200 }));
  *
- * @param {!string | ChainablePromiseElement<Element<'async'>>} selectorOrElement The selector or element to check
+ * @param {!string | ChainablePromiseElement<WebdriverIO.Element>} selectorOrElement The selector or element to check
  * @param {!{ width: number, height: number }} expectedSize The selector to check
  *
  * @returns {!function} An expected condition that returns a promise

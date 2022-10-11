@@ -7,7 +7,7 @@ import { getElement } from '../utils/index.js'
  * @example
  * browser.waitUntil(textToBePresentInElementValue('input', 'password'));
  *
- * @param {!string | ChainablePromiseElement<Element<'async'>>} selectorOrElement The selector or element to check
+ * @param {!string | ChainablePromiseElement<WebdriverIO.Element>} selectorOrElement The selector or element to check
  * @param {!string} expectedValue The expected value to verify
  *
  * @returns {!function} A condition that returns a promise

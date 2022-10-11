@@ -1,5 +1,3 @@
-import type { Browser } from 'webdriverio'
-
 /**
  * A condition for checking that the title contains a case-sensitive substring
  *
@@ -12,7 +10,7 @@ import type { Browser } from 'webdriverio'
  */
 
 export function titleContains(expectedTitle: string): () => Promise<boolean> {
-  return async function (this: Browser<'async'>): Promise<boolean> {
+  return async function (this: WebdriverIO.Browser): Promise<boolean> {
     const actualTitle = await this.getTitle()
 
     return actualTitle.includes(expectedTitle)

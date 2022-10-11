@@ -7,7 +7,7 @@ import { getElement } from '../utils/index.js'
  * @example
  * browser.waitUntil(elementToBeSelected('.btn'));
  *
- * @param {!string | ChainablePromiseElement<Element<'async'>>} selectorOrElement The selector or element to check
+ * @param {!string | ChainablePromiseElement<WebdriverIO.Element>} selectorOrElement The selector or element to check
  *
  * @returns {!function} An expected condition that returns a promise
  *     representing whether the element is selected.

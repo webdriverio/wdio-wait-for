@@ -1,4 +1,3 @@
-import type { Browser } from 'webdriverio'
 import {
   urlContains,
   alertIsPresent,
@@ -12,8 +11,8 @@ import {
   numberOfElementsToBeLessThan,
 } from '../../src/index.js'
 
-declare const browserA: Browser<'async'>
-declare const browserB: Browser<'async'>
+declare const browserA: WebdriverIO.Browser
+declare const browserB: WebdriverIO.Browser
 
 describe('Multiremote', () => {
   beforeEach(async () => await browser.url('/'))

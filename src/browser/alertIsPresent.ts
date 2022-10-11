@@ -1,5 +1,3 @@
-import type { Browser } from 'webdriverio'
-
 /**
  * A condition for checking an alert on the page
  *
@@ -11,7 +9,7 @@ import type { Browser } from 'webdriverio'
  */
 
 export function alertIsPresent(): () => Promise<boolean> {
-  return async function (this: Browser<'async'>): Promise<boolean> {
+  return async function (this: WebdriverIO.Browser): Promise<boolean> {
     return await this.isAlertOpen()
   }
 }
