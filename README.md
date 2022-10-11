@@ -3,13 +3,17 @@
 > wdio-wait-for is a Node.js library for [WebdriverIO](http://webdriver.io/) that supplies a set of common conditions that provides functionalities to wait for certain conditions till a defined task is complete.
 
 ## Installation
-To use wdio-wait-for in your project, run:
+To use `wdio-wait-for` in your project, run:
 
 ```shell
 npm i -D wdio-wait-for
 ```
 
-__Note:__ if you use the WDIO Testrunner this package will be already included.
+If you use Yarn, run:
+
+```sh
+yarn add --dev wdio-wait-for
+```
 
 ## [API](./docs/modules.md)
 
@@ -39,7 +43,9 @@ __Note:__ if you use the WDIO Testrunner this package will be already included.
 ## Examples
 
 ### Import
-#### JavaScript
+#### CommonJS
+
+If you are using WebdriverIO v7 and lower with [CommonJS](https://en.wikipedia.org/wiki/CommonJS) you have to use `require` to import the package, e.g.:
 
 ```javascript
 // import all methods
@@ -55,7 +61,9 @@ const { alertIsPresent } = require('wdio-wait-for');
 browser.waitUntil(alertIsPresent(), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the alert to be present' })
 ```
 
-#### TypeScript
+#### ESM
+
+With TypeScript or WebdriverIO v8 and upwards you can use the `import` statement to import either all helper methods, e.g.:
 
 ```typescript
 // import all methods
@@ -64,20 +72,25 @@ import * as EC from 'wdio-wait-for';
 browser.waitUntil(EC.elementToBeEnabled('input'), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the element to be enabled' })
 ```
 
+or just specific ones, e.g.:
+
 ```typescript
 // import specific method
 import { elementToBeEnabled } from 'wdio-wait-for';
 
 browser.waitUntil(elementToBeEnabled('input'), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the element to be enabled' })
 ```
+
 ### Wait for alert
 This code code snippet shows how to use conditions
 
 ```typescript
 browser.waitUntil(alertIsPresent(), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the alert to be present' })
 ```
-### Wait for number of elements to be
-This code code snippet shows how to use conditions
+
+### Wait for Elements
+
+This code code snippet shows how to use conditions to wait e.g. on a certain number of elements to exist:
 
 ```typescript
 browser.waitUntil(numberOfElementsToBe('.links', 2), { timeout: 5000, timeoutMsg: 'Failed, after waiting for the 2 elements' })
@@ -85,7 +98,9 @@ browser.waitUntil(numberOfElementsToBe('.links', 2), { timeout: 5000, timeoutMsg
 
 ## License
 
-wdio-wait-for is [MIT licensed](./LICENSE).
+[MIT licensed](./LICENSE).
 
 ## Author
+
 Yevhen Laichenkov <elaichenkov@gmail.com>
+Christian Bromann <mail@bromann.dev>
