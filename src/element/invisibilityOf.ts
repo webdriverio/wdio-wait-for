@@ -1,5 +1,5 @@
-import type { StringOrElement } from './../utils/element.types';
-import { getElement } from './../utils';
+import type { StringOrElement } from './../utils/element.types'
+import { getElement } from '../utils/index.js'
 
 /**
  * A condition for checking the element to be invisible
@@ -16,12 +16,12 @@ import { getElement } from './../utils';
 export function invisibilityOf(selectorOrElement: StringOrElement): () => Promise<boolean> {
   return async function (): Promise<boolean> {
     try {
-      const element = await getElement(selectorOrElement);
-      const isVisible = await element.isDisplayed();
+      const element = await getElement(selectorOrElement)
+      const isVisible = await element.isDisplayed()
 
-      return !isVisible;
+      return !isVisible
     } catch {
-      return true;
+      return true
     }
-  };
+  }
 }

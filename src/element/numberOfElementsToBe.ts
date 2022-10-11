@@ -1,5 +1,5 @@
-import type { StringOrElements } from './../utils/element.types';
-import { getElements } from './../utils';
+import type { StringOrElements } from './../utils/element.types'
+import { getElements } from './../utils/index.js'
 
 /**
  * A condition for checking number of elements with given selector
@@ -19,8 +19,8 @@ export function numberOfElementsToBe(
   expectedNumber: number,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {
-    const elements = await getElements(selectorOrElementArray);
+    const elements = await getElements(selectorOrElementArray)
 
-    return elements.length === expectedNumber;
-  };
+    return elements.length === expectedNumber
+  }
 }

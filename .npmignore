@@ -7,3 +7,6 @@ tests
 *.tgz
 .nvmrc
 .prettierrc
+.editorconfig
+.eslintignore
+.eslintrc.cjs

@@ -1,5 +1,5 @@
-import type { StringOrElement } from './../utils/element.types';
-import { getElement } from './../utils';
+import type { StringOrElement } from './../utils/element.types'
+import { getElement } from '../utils/index.js'
 
 /**
  * A condition for checking an element contains a specific value
@@ -19,9 +19,9 @@ export function textToBePresentInElementValue(
   expectedValue: string,
 ): () => Promise<boolean> {
   return async function (): Promise<boolean> {
-    const element = await getElement(selectorOrElement);
-    const value = await element.getValue();
+    const element = await getElement(selectorOrElement)
+    const value = await element.getValue()
 
-    return value.includes(expectedValue);
-  };
+    return value.includes(expectedValue)
+  }
 }

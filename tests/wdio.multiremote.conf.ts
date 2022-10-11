@@ -57,4 +57,4 @@ export const config: WebdriverIO.Config = {
   jasmineOpts: {
     defaultTimeoutInterval: 60000,
   },
-};
+}

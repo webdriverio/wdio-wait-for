@@ -1,4 +1,4 @@
-import type { Browser } from 'webdriverio';
+import type { Browser } from 'webdriverio'
 
 /**
  * A condition for checking the URL of the current page to contain specific text.
@@ -13,8 +13,8 @@ import type { Browser } from 'webdriverio';
 
 export function urlContains(expectedUrl: string): () => Promise<boolean> {
   return async function (this: Browser<'async'>): Promise<boolean> {
-    const actualUrl = await this.getUrl();
+    const actualUrl = await this.getUrl()
 
-    return actualUrl.includes(expectedUrl);
-  };
+    return actualUrl.includes(expectedUrl)
+  }
 }

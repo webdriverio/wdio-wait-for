@@ -2,13 +2,13 @@
 
 name: Tests
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,16 +23,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
-      - name: Update Google Chrome to latest
-        run: |
-              sudo apt update
-              sudo apt --only-upgrade install google-chrome-stable
-              google-chrome --version
+
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Run tests
-        run: npm test
-
-      - name: Run multiremote tests
-        run: npm run test:multiremote
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: npm test

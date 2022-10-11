@@ -11,8 +11,8 @@
 
 export function not(expectedCondition: () => Promise<boolean>): () => Promise<boolean> {
   return async (): Promise<boolean> => {
-    const result = await expectedCondition();
+    const result = await expectedCondition()
 
-    return !result;
-  };
+    return !result
+  }
 }

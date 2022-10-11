@@ -1,4 +1,4 @@
-import { logicalChain } from './logicalChain';
+import { logicalChain } from './logicalChain.js'
 
 /**
  * Chain a number of expected conditions using logical or, short circuiting
@@ -14,5 +14,5 @@ import { logicalChain } from './logicalChain';
  */
 
 export function or(...args: (() => Promise<boolean>)[]): () => Promise<boolean> {
-  return logicalChain(false, args);
+  return logicalChain(false, args)
 }

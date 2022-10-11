@@ -1,18 +1,18 @@
-import { numberOfWindowsToBe } from '../../src';
+import { numberOfWindowsToBe } from '../../src/index.js'
 
 describe('numberOfWindowsToBe', () => {
-  beforeEach(async () => await browser.url('/'));
+  beforeEach(async () => await browser.url('/'))
 
   it('should verify that method returns true when number of windows to be', async () => {
-    const link = await $('.large-centered a');
-    await link.click();
+    const link = await $('.large-centered a')
+    await link.click()
 
-    expect(await numberOfWindowsToBe(2).call(browser)).toBe(true);
-  });
+    expect(await numberOfWindowsToBe(2).call(browser)).toBe(true)
+  })
 
   it('should verify that method returns false when number of windows not to be', async () => {
-    await browser.closeWindow();
+    await browser.closeWindow()
 
-    expect(await numberOfWindowsToBe(2).call(browser)).toBe(false);
-  });
-});
+    expect(await numberOfWindowsToBe(2).call(browser)).toBe(false)
+  })
+})
