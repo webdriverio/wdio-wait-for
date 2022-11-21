@@ -1,6 +1,6 @@
 export const config: WebdriverIO.Config = {
-  specs: ['./tests/**/*.test.ts'],
-  exclude: ['./tests/multiremote/multiremote.test.ts'],
+  specs: ['./**/*.test.ts'],
+  exclude: ['./multiremote/multiremote.test.ts'],
   maxInstances: 10,
   capabilities: [
     {
