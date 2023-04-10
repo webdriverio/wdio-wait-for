@@ -67,7 +67,7 @@
     "@types/jasmine": "^4.3.1",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
-    "@vitest/coverage-c8": "^0.29.1",
+    "@vitest/coverage-c8": "^0.30.0",
     "@wdio/cli": "^8.3.9",
     "@wdio/jasmine-framework": "^8.3.9",
     "@wdio/local-runner": "^8.3.9",
