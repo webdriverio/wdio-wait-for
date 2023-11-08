@@ -102,5 +102,5 @@ browser.waitUntil(numberOfElementsToBe('.links', 2), { timeout: 5000, timeoutMsg
 
 ## Author
 
-Yevhen Laichenkov <elaichenkov@gmail.com><br />
-Christian Bromann <mail@bromann.dev>
+Yevhen Laichenkov - `elaichenkov@gmail.com`<br />
+Christian Bromann - `mail@bromann.dev`
