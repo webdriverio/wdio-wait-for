@@ -1,26 +1,38 @@
 const importBrowserPromise = import('../browser/index.js')
 
 exports.alertIsPresent = async function () {
-    const fn = (await importBrowserPromise).alertIsPresent
-    return fn.apply(this)
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const fn = (await importBrowserPromise).alertIsPresent
+        return fn().apply(this)
+    }
 }
 exports.numberOfWindowsToBe = async function (expectedNumber: number) {
-    const fn = (await importBrowserPromise).numberOfWindowsToBe
-    return fn.call(this, expectedNumber)
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const fn = (await importBrowserPromise).numberOfWindowsToBe
+        return fn(expectedNumber).call(this)
+    }
 }
 exports.titleContains = async function (expectedTitle: string) {
-    const fn = (await importBrowserPromise).titleContains
-    return fn.call(this, expectedTitle)
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const fn = (await importBrowserPromise).titleContains
+        return fn(expectedTitle).call(this)
+    }
 }
 exports.titleIs = async function (expectedTitle: string) {
-    const fn = (await importBrowserPromise).titleIs
-    return fn.call(this, expectedTitle)
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const fn = (await importBrowserPromise).titleIs
+        return fn(expectedTitle).call(this)
+    }
 }
 exports.urlContains = async function (expectedUrl: string) {
-    const fn = (await importBrowserPromise).urlContains
-    return fn.call(this, expectedUrl)
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const fn = (await importBrowserPromise).urlContains
+        return fn(expectedUrl).call(this)
+    }
 }
 exports.urlIs = async function (expectedUrl: string) {
-    const fn = (await importBrowserPromise).urlIs
-    return fn.call(this, expectedUrl)
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const fn = (await importBrowserPromise).urlIs
+        return fn(expectedUrl).call(this)
+    }
 }
