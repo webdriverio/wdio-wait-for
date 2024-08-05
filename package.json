@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@types/jasmine": "^5.1.4",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^7.0.2",
     "@wdio/cli": "^8.32.2",
     "@wdio/jasmine-framework": "^8.32.2",
