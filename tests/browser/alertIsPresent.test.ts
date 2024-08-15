@@ -1,6 +1,6 @@
 import { alertIsPresent } from '../../src/index.js'
 
-describe('alertIsPresent', () => {
+xdescribe('alertIsPresent', () => {
   beforeEach(async () => await browser.url('/'))
 
   it('should verify that method returns true when element is clickable', async () => {

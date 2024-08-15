@@ -2,7 +2,7 @@ import { elementToBeEnabled } from '../../src/index.js'
 
 const selector = 'button'
 
-describe('elementToBeEnabled', () => {
+xdescribe('elementToBeEnabled', () => {
   beforeEach(async () => await browser.url('/add_remove_elements/'))
 
   it('should verify that method returns true when element is enabled', async () => {

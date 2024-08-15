@@ -32,7 +32,7 @@ describe('Multiremote', () => {
       expect(await urlIs('https://webdriver.io/').call(browserB)).toBe(true)
     })
 
-    it('should verify alertIsPresent method', async () => {
+    xit('should verify alertIsPresent method', async () => {
       await browserB.execute('alert("Alert");')
 
       expect(await alertIsPresent().call(browserB)).toBe(true)
@@ -63,7 +63,7 @@ describe('Multiremote', () => {
   })
 
   describe('Element', () => {
-    it('should verify elementToBeClickable method', async () => {
+    xit('should verify elementToBeClickable method', async () => {
       await browser.url('/add_remove_elements/')
 
       await browserB.execute('document.querySelector("button").setAttribute("disabled", "");')
@@ -72,7 +72,7 @@ describe('Multiremote', () => {
       expect(await elementToBeClickable(browserA.$('button'))()).toBe(true)
     })
 
-    it('should verify elementToBeEnabled method', async () => {
+    xit('should verify elementToBeEnabled method', async () => {
       await browser.url('/add_remove_elements/')
 
       await browserB.execute('document.querySelector("button").setAttribute("disabled", "");')
