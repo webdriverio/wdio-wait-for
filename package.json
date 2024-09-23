@@ -65,21 +65,21 @@
   },
   "devDependencies": {
     "@types/jasmine": "^5.1.4",
-    "@typescript-eslint/eslint-plugin": "^8.1.0",
-    "@typescript-eslint/parser": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
     "@wdio/cli": "9.0.9",
     "@wdio/jasmine-framework": "9.0.9",
     "@wdio/local-runner": "9.0.9",
     "@wdio/spec-reporter": "9.0.8",
     "eslint": "^8.56.0",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-unicorn": "^55.0.0",
-    "npm-run-all2": "^6.2.2",
+    "npm-run-all2": "^6.2.3",
     "release-it": "^17.6.0",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.26.5",
-    "typedoc-plugin-markdown": "^4.2.4",
-    "typescript": "^5.5.4",
+    "typedoc": "^0.26.7",
+    "typedoc-plugin-markdown": "^4.2.8",
+    "typescript": "^5.6.2",
     "webdriverio": "9.0.9"
   }
 }
