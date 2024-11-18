@@ -10,9 +10,9 @@
  */
 
 export function not(expectedCondition: () => Promise<boolean>): () => Promise<boolean> {
-  return async function (this:WebdriverIO.Browser): Promise<boolean> {
-    const result = await expectedCondition.call(this)
+    return async function (this:WebdriverIO.Browser): Promise<boolean> {
+        const result = await expectedCondition.call(this)
 
-    return !result
-  }
+        return !result
+    }
 }

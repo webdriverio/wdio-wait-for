@@ -15,13 +15,13 @@ import { getElement } from '../utils/index.js'
  */
 
 export function textToBePresentInElement(
-  selectorOrElement: StringOrElement,
-  expectedText: string,
+    selectorOrElement: StringOrElement,
+    expectedText: string,
 ): () => Promise<boolean> {
-  return async function (): Promise<boolean> {
-    const element = await getElement(selectorOrElement)
-    const text = await element.getText()
+    return async function (): Promise<boolean> {
+        const element = await getElement(selectorOrElement)
+        const text = await element.getText()
 
-    return text.includes(expectedText)
-  }
+        return text.includes(expectedText)
+    }
 }

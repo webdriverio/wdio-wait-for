@@ -14,5 +14,5 @@ import { logicalChain } from './logicalChain.js'
  */
 
 export function and(...args: (() => Promise<boolean>)[]): () => Promise<boolean> {
-  return logicalChain(true, args)
+    return logicalChain(true, args)
 }

@@ -10,9 +10,9 @@
  */
 
 export function titleContains(expectedTitle: string): () => Promise<boolean> {
-  return async function (this: WebdriverIO.Browser): Promise<boolean> {
-    const actualTitle = await this.getTitle()
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const actualTitle = await this.getTitle()
 
-    return actualTitle.includes(expectedTitle)
-  }
+        return actualTitle.includes(expectedTitle)
+    }
 }

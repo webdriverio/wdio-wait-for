@@ -14,14 +14,14 @@ import { getElement } from '../utils/index.js'
  */
 
 export function invisibilityOf(selectorOrElement: StringOrElement): () => Promise<boolean> {
-  return async function (): Promise<boolean> {
-    try {
-      const element = await getElement(selectorOrElement)
-      const isVisible = await element.isDisplayed()
+    return async function (): Promise<boolean> {
+        try {
+            const element = await getElement(selectorOrElement)
+            const isVisible = await element.isDisplayed()
 
-      return !isVisible
-    } catch {
-      return true
+            return !isVisible
+        } catch {
+            return true
+        }
     }
-  }
 }

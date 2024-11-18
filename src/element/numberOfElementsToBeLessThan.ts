@@ -15,12 +15,12 @@ import { getElements } from '../utils/index.js'
  */
 
 export function numberOfElementsToBeLessThan(
-  selectorOrElementArray: StringOrElements,
-  expectedNumber: number,
+    selectorOrElementArray: StringOrElements,
+    expectedNumber: number,
 ): () => Promise<boolean> {
-  return async function (): Promise<boolean> {
-    const elements = await getElements(selectorOrElementArray)
+    return async function (): Promise<boolean> {
+        const elements = await getElements(selectorOrElementArray)
 
-    return elements.length < expectedNumber
-  }
+        return elements.length < expectedNumber
+    }
 }

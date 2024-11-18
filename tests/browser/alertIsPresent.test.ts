@@ -1,15 +1,15 @@
 import { alertIsPresent } from '../../src/index.js'
 
 xdescribe('alertIsPresent', () => {
-  beforeEach(async () => await browser.url('/'))
+    beforeEach(async () => await browser.url('/'))
 
-  it('should verify that method returns true when element is clickable', async () => {
-    await browser.execute('alert("Alert");')
+    it('should verify that method returns true when element is clickable', async () => {
+        await browser.execute('alert("Alert");')
 
-    expect(await alertIsPresent().call(browser)).toBe(true)
-  })
+        expect(await alertIsPresent().call(browser)).toBe(true)
+    })
 
-  it('should verify that method returns false when alert is not present', async () => {
-    expect(await alertIsPresent().call(browser)).toBe(false)
-  })
+    it('should verify that method returns false when alert is not present', async () => {
+        expect(await alertIsPresent().call(browser)).toBe(false)
+    })
 })

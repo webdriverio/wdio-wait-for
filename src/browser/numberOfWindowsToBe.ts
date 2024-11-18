@@ -10,9 +10,9 @@
  */
 
 export function numberOfWindowsToBe(expectedNumber: number): () => Promise<boolean> {
-  return async function (this: WebdriverIO.Browser): Promise<boolean> {
-    const actualWindows = await this.getWindowHandles()
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const actualWindows = await this.getWindowHandles()
 
-    return actualWindows.length === expectedNumber
-  }
+        return actualWindows.length === expectedNumber
+    }
 }

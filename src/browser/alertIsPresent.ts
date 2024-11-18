@@ -9,15 +9,15 @@
  */
 
 export function alertIsPresent(): () => Promise<boolean> {
-  return async function (this: WebdriverIO.Browser): Promise<boolean> {
-    try {
-        await this.getAlertText()
-        return true
-    } catch (err: unknown) {
-        if (err instanceof Error && err.message.includes('no such alert')) {
-            return false
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        try {
+            await this.getAlertText()
+            return true
+        } catch (err: unknown) {
+            if (err instanceof Error && err.message.includes('no such alert')) {
+                return false
+            }
+            throw err
         }
-        throw err
     }
-  }
 }

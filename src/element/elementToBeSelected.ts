@@ -14,9 +14,9 @@ import { getElement } from '../utils/index.js'
  */
 
 export function elementToBeSelected(selectorOrElement: StringOrElement): () => Promise<boolean> {
-  return async function (): Promise<boolean> {
-    const element = await getElement(selectorOrElement)
+    return async function (): Promise<boolean> {
+        const element = await getElement(selectorOrElement)
 
-    return await element.isSelected()
-  }
+        return await element.isSelected()
+    }
 }

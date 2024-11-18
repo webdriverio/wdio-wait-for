@@ -1,23 +1,15 @@
 {
-    "compilerOptions": {
-      "target": "ES2022",
-      "module": "ESNext",
-      "declaration": true,
-      "outDir": "dist",
-      "rootDir": "src",
-      "strict": true,
-      "skipLibCheck": true,
-      "moduleResolution": "node",
-      "types": [
-        "node",
-        "@wdio/globals/types",
-        "@wdio/jasmine-framework"
-      ],
-      "lib": ["ES2022", "DOM"]
-    },
-    "exclude": [
-      "node_modules",
-      "dist",
-      "tests"
-    ]
-  }
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "types": ["node", "@wdio/globals/types", "@wdio/jasmine-framework"],
+    "lib": ["ES2022", "DOM"]
+  },
+  "exclude": ["node_modules", "dist", "tests"]
+}

@@ -10,9 +10,9 @@
  */
 
 export function titleIs(expectedTitle: string): () => Promise<boolean> {
-  return async function (this: WebdriverIO.Browser): Promise<boolean> {
-    const actualTitle = await this.getTitle()
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const actualTitle = await this.getTitle()
 
-    return actualTitle === expectedTitle
-  }
+        return actualTitle === expectedTitle
+    }
 }

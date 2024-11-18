@@ -14,9 +14,9 @@ import { getElement } from '../utils/index.js'
  */
 
 export function elementToBeEnabled(selectorOrElement: StringOrElement): () => Promise<boolean> {
-  return async function (): Promise<boolean> {
-    const element = await getElement(selectorOrElement)
+    return async function (): Promise<boolean> {
+        const element = await getElement(selectorOrElement)
 
-    return await element.isEnabled()
-  }
+        return await element.isEnabled()
+    }
 }

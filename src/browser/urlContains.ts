@@ -10,9 +10,9 @@
  */
 
 export function urlContains(expectedUrl: string): () => Promise<boolean> {
-  return async function (this: WebdriverIO.Browser): Promise<boolean> {
-    const actualUrl = await this.getUrl()
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const actualUrl = await this.getUrl()
 
-    return actualUrl.includes(expectedUrl)
-  }
+        return actualUrl.includes(expectedUrl)
+    }
 }

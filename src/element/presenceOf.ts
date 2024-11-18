@@ -14,14 +14,14 @@ import { getElement } from '../utils/index.js'
  */
 
 export function presenceOf(selectorOrElement: StringOrElement): () => Promise<boolean> {
-  return async function (): Promise<boolean> {
-    try {
-      const element = await getElement(selectorOrElement)
-      const isVisible = await element.isExisting()
+    return async function (): Promise<boolean> {
+        try {
+            const element = await getElement(selectorOrElement)
+            const isVisible = await element.isExisting()
 
-      return isVisible
-    } catch {
-      return false
+            return isVisible
+        } catch {
+            return false
+        }
     }
-  }
 }

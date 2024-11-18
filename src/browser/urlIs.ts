@@ -10,9 +10,9 @@
  */
 
 export function urlIs(expectedUrl: string): () => Promise<boolean> {
-  return async function (this: WebdriverIO.Browser): Promise<boolean> {
-    const actualUrl = await this.getUrl()
+    return async function (this: WebdriverIO.Browser): Promise<boolean> {
+        const actualUrl = await this.getUrl()
 
-    return actualUrl === expectedUrl
-  }
+        return actualUrl === expectedUrl
+    }
 }
