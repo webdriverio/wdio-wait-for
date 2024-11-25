@@ -70,7 +70,7 @@
     "@wdio/cli": "9.3.1",
     "@wdio/eslint": "^0.0.3",
     "@wdio/jasmine-framework": "9.3.1",
-    "@wdio/local-runner": "9.2.15",
+    "@wdio/local-runner": "9.3.1",
     "@wdio/spec-reporter": "9.2.14",
     "eslint": "^9.15.0",
     "npm-run-all2": "^7.0.1",
