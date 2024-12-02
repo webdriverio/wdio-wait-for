@@ -76,7 +76,7 @@
     "npm-run-all2": "^7.0.1",
     "release-it": "^17.6.0",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.26.7",
+    "typedoc": "^0.27.2",
     "typedoc-plugin-markdown": "^4.2.8",
     "typescript": "^5.6.2",
     "webdriverio": "9.4.1"
