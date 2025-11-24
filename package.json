@@ -79,6 +79,6 @@
     "typedoc": "^0.28.3",
     "typedoc-plugin-markdown": "^4.2.8",
     "typescript": "^5.6.2",
-    "webdriverio": "9.20.0"
+    "webdriverio": "9.20.1"
   }
 }
