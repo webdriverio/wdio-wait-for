@@ -26,7 +26,6 @@ on:
           - "no"
 
 env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   NPM_CONFIG_PROVENANCE: true
 
 jobs:
@@ -36,18 +35,13 @@ jobs:
       contents: write
       id-token: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           ref: "main"
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
         with:
-          node-version: 18.x
-      - name: NPM Setup
-        run: |
-          npm set registry "https://registry.npmjs.org/"
-          npm set //registry.npmjs.org/:_authToken $NPM_TOKEN
-          npm whoami
+          node-version-file: .nvmrc
       - name: Git Setup
         run: |
           git config --global user.email "bot@webdriver.io"
@@ -61,12 +55,10 @@ jobs:
       - name: Release
         run: npx release-it ${{github.event.inputs.releaseType}} --github.release --ci --npm.skipChecks --no-git.requireCleanWorkingDir --npm.tag=${{github.event.inputs.distTag}}
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ github.event.inputs.preRelease == 'no' }}
       - name: Pre-Release
         run: npx release-it ${{github.event.inputs.releaseType}} --github.release --ci --npm.skipChecks --no-git.requireCleanWorkingDir --preRelease=alpha --github.preRelease --npm.tag=next
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ github.event.inputs.preRelease == 'yes' }}
