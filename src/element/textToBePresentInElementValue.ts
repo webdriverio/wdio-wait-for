@@ -22,6 +22,6 @@ export function textToBePresentInElementValue(
         const element = await getElement(selectorOrElement)
         const value = await element.getValue()
 
-        return value.includes(expectedValue)
+        return typeof value === 'string' && value.includes(expectedValue)
     }
 }
