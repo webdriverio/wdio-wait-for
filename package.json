@@ -71,7 +71,7 @@
     "@wdio/local-runner": "9.27.0",
     "@wdio/spec-reporter": "9.27.0",
     "eslint": "^10.0.0",
-    "npm-run-all2": "^8.0.4",
+    "npm-run-all2": "^9.0.1",
     "release-it": "^19.1.0",
     "ts-node": "^10.9.2",
     "typedoc": "^0.28.15",
